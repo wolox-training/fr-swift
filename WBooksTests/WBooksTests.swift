@@ -1,6 +1,6 @@
 //
-//  fr-swiftTests.swift
-//  fr-swiftTests
+//  WBooksTests.swift
+//  WBooksTests
 //
 //  Created by Guido Marucci Blas on 4/3/16.
 //  Copyright © 2016 Wolox. All rights reserved.
@@ -8,9 +8,9 @@
 
 import Quick
 import Nimble
-import fr-swift
+import WBooks
 
-final class frswiftSpec: QuickSpec {
+final class WBooksSpec: QuickSpec {
     
     override func spec() {
         

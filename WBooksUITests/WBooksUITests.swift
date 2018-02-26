@@ -1,6 +1,6 @@
 //
-//  fr-swiftUITests.swift
-//  fr-swiftUITests
+//  WBooksUITests.swift
+//  WBooksUITests
 //
 //  Created by Guido Marucci Blas on 4/3/16.
 //  Copyright © 2016 Wolox. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class frswiftUITests: XCTestCase {
+class WBooksUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
