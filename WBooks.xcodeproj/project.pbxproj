@@ -30,14 +30,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9D1575161CB1B27500EA395E /* PBXContainerItemProxy */ = {
+		C8ED9A6920447977002C0F46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D1574F91CB1B27500EA395E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9D1575001CB1B27500EA395E;
 			remoteInfo = WBooks;
 		};
-		9D1575211CB1B27500EA395E /* PBXContainerItemProxy */ = {
+		C8ED9A6B2044797E002C0F46 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D1574F91CB1B27500EA395E /* Project object */;
 			proxyType = 1;
@@ -249,7 +249,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				9D1575171CB1B27500EA395E /* PBXTargetDependency */,
+				C8ED9A6A20447977002C0F46 /* PBXTargetDependency */,
 			);
 			name = WBooksTests;
 			productName = WBooksTests;
@@ -267,7 +267,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				9D1575221CB1B27500EA395E /* PBXTargetDependency */,
+				C8ED9A6C2044797E002C0F46 /* PBXTargetDependency */,
 			);
 			name = WBooksUITests;
 			productName = WBooksUITests;
@@ -416,15 +416,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9D1575171CB1B27500EA395E /* PBXTargetDependency */ = {
+		C8ED9A6A20447977002C0F46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9D1575001CB1B27500EA395E /* WBooks */;
-			targetProxy = 9D1575161CB1B27500EA395E /* PBXContainerItemProxy */;
+			targetProxy = C8ED9A6920447977002C0F46 /* PBXContainerItemProxy */;
 		};
-		9D1575221CB1B27500EA395E /* PBXTargetDependency */ = {
+		C8ED9A6C2044797E002C0F46 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9D1575001CB1B27500EA395E /* WBooks */;
-			targetProxy = 9D1575211CB1B27500EA395E /* PBXContainerItemProxy */;
+			targetProxy = C8ED9A6B2044797E002C0F46 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -542,7 +542,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.WBooksUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WBooksUITests/WBooksUITests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = WBooks;
 			};
@@ -649,7 +649,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.WBooksUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WBooksUITests/WBooksUITests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = WBooks;
 			};
@@ -755,7 +755,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.WBooksUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WBooksUITests/WBooksUITests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = WBooks;
 			};
@@ -860,7 +860,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.WBooksUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "WBooksUITests/WBooksUITests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = WBooks;
 			};

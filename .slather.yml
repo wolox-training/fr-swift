@@ -1,8 +1,8 @@
-xcodeproj: ./fr-swift.xcodeproj
-scheme: fr-swift
+xcodeproj: ./WBooks.xcodeproj
+scheme: WBooks
 ignore:
-  - fr-swift/AppDelegate.swift
-  - fr-swift/Environment.swift
-  - fr-swift/Services/RollbarService.swift
-  - fr-swiftTests/*
-  - fr-swiftUITests/*
+  - WBooks/AppDelegate.swift
+  - WBooks/Environment.swift
+  - WBooks/Services/RollbarService.swift
+  - WBooksTests/*
+  - WBooksUITests/*

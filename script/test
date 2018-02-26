@@ -14,6 +14,7 @@ run_tests ()
 
   if [ -z "$XCODE_WORKSPACE" ]
   then
+    echo "$XCODE_PROJECT"
     test_command="$test_command -project $XCODE_PROJECT"
   else
     test_command="$test_command -workspace $XCODE_WORKSPACE"
