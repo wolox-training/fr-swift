@@ -11,14 +11,14 @@
 		9D1575071CB1B27500EA395E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575061CB1B27500EA395E /* ViewController.swift */; };
 		9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D15750B1CB1B27500EA395E /* Assets.xcassets */; };
 		9D15750F1CB1B27500EA395E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D15750D1CB1B27500EA395E /* LaunchScreen.storyboard */; };
-		9D15751A1CB1B27500EA395E /* fr-swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575191CB1B27500EA395E /* fr-swiftTests.swift */; };
-		9D1575251CB1B27500EA395E /* fr-swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575241CB1B27500EA395E /* fr-swiftUITests.swift */; };
+		9D15751A1CB1B27500EA395E /* WBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575191CB1B27500EA395E /* WBooksTests.swift */; };
 		9D1F7A711CBED81900E20BE5 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1F7A6F1CBED81900E20BE5 /* Nimble.framework */; };
 		9D1F7A721CBED81900E20BE5 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D1F7A701CBED81900E20BE5 /* Quick.framework */; };
 		9D1F7A741CBED82900E20BE5 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9D1F7A6F1CBED81900E20BE5 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D1F7A751CBED82900E20BE5 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9D1F7A701CBED81900E20BE5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D6E405A1CB1B93A008CE558 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */; };
 		9D6E405B1CB1B93A008CE558 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40561CB1B93A008CE558 /* Result.framework */; };
+		C824FAFC20445B3900CDBF31 /* WBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824FAFB20445B3900CDBF31 /* WBooksUITests.swift */; };
 		C8798FE62040B7AE00EACA53 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8798FE52040B7AE00EACA53 /* Default-568h@2x.png */; };
 		CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB934DC1D21992100DF75C2 /* Environment.swift */; };
 		CED934881E8466A60017CF96 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED934861E8466A60017CF96 /* Core.framework */; };
@@ -35,14 +35,14 @@
 			containerPortal = 9D1574F91CB1B27500EA395E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9D1575001CB1B27500EA395E;
-			remoteInfo = fr-swift;
+			remoteInfo = "WBooks";
 		};
 		9D1575211CB1B27500EA395E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D1574F91CB1B27500EA395E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9D1575001CB1B27500EA395E;
-			remoteInfo = fr-swift;
+			remoteInfo = "WBooks";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -61,22 +61,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D1575011CB1B27500EA395E /* fr-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fr-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1575011CB1B27500EA395E /* WBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1575041CB1B27500EA395E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D1575061CB1B27500EA395E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D15750B1CB1B27500EA395E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D15750E1CB1B27500EA395E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D1575101CB1B27500EA395E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D1575151CB1B27500EA395E /* fr-swiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fr-swiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D1575191CB1B27500EA395E /* fr-swiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fr-swiftTests.swift; sourceTree = "<group>"; };
+		9D1575151CB1B27500EA395E /* WBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1575191CB1B27500EA395E /* WBooksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WBooksTests.swift"; sourceTree = "<group>"; };
 		9D15751B1CB1B27500EA395E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D1575201CB1B27500EA395E /* fr-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fr-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D1575241CB1B27500EA395E /* fr-swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fr-swiftUITests.swift; sourceTree = "<group>"; };
+		9D1575201CB1B27500EA395E /* WBooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1575261CB1B27500EA395E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D1F7A6F1CBED81900E20BE5 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		9D1F7A701CBED81900E20BE5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		9D6E40561CB1B93A008CE558 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		C824FAFB20445B3900CDBF31 /* WBooksUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WBooksUITests.swift"; sourceTree = "<group>"; };
 		C8798FE52040B7AE00EACA53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CEB934DC1D21992100DF75C2 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		CEB934E11D21A49A00DF75C2 /* Alpha.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Alpha.xcconfig; sourceTree = "<group>"; };
@@ -130,9 +130,9 @@
 			children = (
 				C8798FE52040B7AE00EACA53 /* Default-568h@2x.png */,
 				9D6E405F1CB1BA21008CE558 /* Frameworks */,
-				9D1575031CB1B27500EA395E /* fr-swift */,
-				9D1575181CB1B27500EA395E /* fr-swiftTests */,
-				9D1575231CB1B27500EA395E /* fr-swiftUITests */,
+				9D1575031CB1B27500EA395E /* WBooks */,
+				9D1575181CB1B27500EA395E /* WBooksTests */,
+				9D1575231CB1B27500EA395E /* WBooksUITests */,
 				9D1575021CB1B27500EA395E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -140,14 +140,14 @@
 		9D1575021CB1B27500EA395E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D1575011CB1B27500EA395E /* fr-swift.app */,
-				9D1575151CB1B27500EA395E /* fr-swiftTests.xctest */,
-				9D1575201CB1B27500EA395E /* fr-swiftUITests.xctest */,
+				9D1575011CB1B27500EA395E /* WBooks.app */,
+				9D1575151CB1B27500EA395E /* WBooksTests.xctest */,
+				9D1575201CB1B27500EA395E /* WBooksUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9D1575031CB1B27500EA395E /* fr-swift */ = {
+		9D1575031CB1B27500EA395E /* WBooks */ = {
 			isa = PBXGroup;
 			children = (
 				E1530D9A1ED378F9002A9002 /* Services */,
@@ -159,25 +159,25 @@
 				9D1575101CB1B27500EA395E /* Info.plist */,
 				CEB934DC1D21992100DF75C2 /* Environment.swift */,
 			);
-			path = fr-swift;
+			path = "WBooks";
 			sourceTree = "<group>";
 		};
-		9D1575181CB1B27500EA395E /* fr-swiftTests */ = {
+		9D1575181CB1B27500EA395E /* WBooksTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D1575191CB1B27500EA395E /* fr-swiftTests.swift */,
+				9D1575191CB1B27500EA395E /* WBooksTests.swift */,
 				9D15751B1CB1B27500EA395E /* Info.plist */,
 			);
-			path = fr-swiftTests;
+			path = "WBooksTests";
 			sourceTree = "<group>";
 		};
-		9D1575231CB1B27500EA395E /* fr-swiftUITests */ = {
+		9D1575231CB1B27500EA395E /* WBooksUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9D1575241CB1B27500EA395E /* fr-swiftUITests.swift */,
+				C824FAFB20445B3900CDBF31 /* WBooksUITests.swift */,
 				9D1575261CB1B27500EA395E /* Info.plist */,
 			);
-			path = fr-swiftUITests;
+			path = "WBooksUITests";
 			sourceTree = "<group>";
 		};
 		9D6E405F1CB1BA21008CE558 /* Frameworks */ = {
@@ -218,9 +218,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D1575001CB1B27500EA395E /* fr-swift */ = {
+		9D1575001CB1B27500EA395E /* WBooks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D1575291CB1B27500EA395E /* Build configuration list for PBXNativeTarget "fr-swift" */;
+			buildConfigurationList = 9D1575291CB1B27500EA395E /* Build configuration list for PBXNativeTarget "WBooks" */;
 			buildPhases = (
 				9D1574FD1CB1B27500EA395E /* Sources */,
 				9D1574FE1CB1B27500EA395E /* Frameworks */,
@@ -232,14 +232,14 @@
 			);
 			dependencies = (
 			);
-			name = "fr-swift";
-			productName = fr-swift;
-			productReference = 9D1575011CB1B27500EA395E /* fr-swift.app */;
+			name = WBooks;
+			productName = "WBooks";
+			productReference = 9D1575011CB1B27500EA395E /* WBooks.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9D1575141CB1B27500EA395E /* fr-swiftTests */ = {
+		9D1575141CB1B27500EA395E /* WBooksTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D15752C1CB1B27500EA395E /* Build configuration list for PBXNativeTarget "fr-swiftTests" */;
+			buildConfigurationList = 9D15752C1CB1B27500EA395E /* Build configuration list for PBXNativeTarget "WBooksTests" */;
 			buildPhases = (
 				9D1575111CB1B27500EA395E /* Sources */,
 				9D1575121CB1B27500EA395E /* Frameworks */,
@@ -251,14 +251,14 @@
 			dependencies = (
 				9D1575171CB1B27500EA395E /* PBXTargetDependency */,
 			);
-			name = "fr-swiftTests";
-			productName = fr-swiftTests;
-			productReference = 9D1575151CB1B27500EA395E /* fr-swiftTests.xctest */;
+			name = WBooksTests;
+			productName = "WBooksTests";
+			productReference = 9D1575151CB1B27500EA395E /* WBooksTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9D15751F1CB1B27500EA395E /* fr-swiftUITests */ = {
+		9D15751F1CB1B27500EA395E /* WBooksUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D15752F1CB1B27500EA395E /* Build configuration list for PBXNativeTarget "fr-swiftUITests" */;
+			buildConfigurationList = 9D15752F1CB1B27500EA395E /* Build configuration list for PBXNativeTarget "WBooksUITests" */;
 			buildPhases = (
 				9D15751C1CB1B27500EA395E /* Sources */,
 				9D15751D1CB1B27500EA395E /* Frameworks */,
@@ -269,9 +269,9 @@
 			dependencies = (
 				9D1575221CB1B27500EA395E /* PBXTargetDependency */,
 			);
-			name = "fr-swiftUITests";
-			productName = fr-swiftUITests;
-			productReference = 9D1575201CB1B27500EA395E /* fr-swiftUITests.xctest */;
+			name = WBooksUITests;
+			productName = "WBooksUITests";
+			productReference = 9D1575201CB1B27500EA395E /* WBooksUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -296,12 +296,12 @@
 					};
 					9D15751F1CB1B27500EA395E = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0920;
 						TestTargetID = 9D1575001CB1B27500EA395E;
 					};
 				};
 			};
-			buildConfigurationList = 9D1574FC1CB1B27500EA395E /* Build configuration list for PBXProject "fr-swift" */;
+			buildConfigurationList = 9D1574FC1CB1B27500EA395E /* Build configuration list for PBXProject "WBooks" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -314,9 +314,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D1575001CB1B27500EA395E /* fr-swift */,
-				9D1575141CB1B27500EA395E /* fr-swiftTests */,
-				9D15751F1CB1B27500EA395E /* fr-swiftUITests */,
+				9D1575001CB1B27500EA395E /* WBooks */,
+				9D1575141CB1B27500EA395E /* WBooksTests */,
+				9D15751F1CB1B27500EA395E /* WBooksUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -401,7 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D15751A1CB1B27500EA395E /* fr-swiftTests.swift in Sources */,
+				9D15751A1CB1B27500EA395E /* WBooksTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D1575251CB1B27500EA395E /* fr-swiftUITests.swift in Sources */,
+				C824FAFC20445B3900CDBF31 /* WBooksUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,12 +418,12 @@
 /* Begin PBXTargetDependency section */
 		9D1575171CB1B27500EA395E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D1575001CB1B27500EA395E /* fr-swift */;
+			target = 9D1575001CB1B27500EA395E /* WBooks */;
 			targetProxy = 9D1575161CB1B27500EA395E /* PBXContainerItemProxy */;
 		};
 		9D1575221CB1B27500EA395E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D1575001CB1B27500EA395E /* fr-swift */;
+			target = 9D1575001CB1B27500EA395E /* WBooks */;
 			targetProxy = 9D1575211CB1B27500EA395E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -502,11 +502,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = fr-swift/Info.plist;
+				INFOPLIST_FILE = "WBooks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.fr-swift.debug;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wolox.WBooks.debug";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -524,12 +524,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = fr-swiftTests/Info.plist;
+				INFOPLIST_FILE = "WBooksTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.fr-swiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wolox.WBooksTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fr-swift.app/fr-swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WBooks.app/WBooks";
 			};
 			name = Debug;
 		};
@@ -537,12 +537,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E17065121F75B6A10042755C /* Debug.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = fr-swiftUITests/Info.plist;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "WBooksUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.fr-swiftUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wolox.WBooksUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WBooksUITests/WBooksUITests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = fr-swift;
+				TEST_TARGET_NAME = "WBooks";
 			};
 			name = Debug;
 		};
@@ -607,11 +609,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = fr-swift/Info.plist;
+				INFOPLIST_FILE = "WBooks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_SWIFT_FLAGS = "-D ALPHA";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.fr-swift.alpha;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wolox.WBooks.alpha";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -629,12 +631,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = fr-swiftTests/Info.plist;
+				INFOPLIST_FILE = "WBooksTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.fr-swiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wolox.WBooksTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fr-swift.app/fr-swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WBooks.app/WBooks";
 			};
 			name = Alpha;
 		};
@@ -642,12 +644,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CEB934E11D21A49A00DF75C2 /* Alpha.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = fr-swiftUITests/Info.plist;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "WBooksUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.fr-swiftUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wolox.WBooksUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WBooksUITests/WBooksUITests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = fr-swift;
+				TEST_TARGET_NAME = "WBooks";
 			};
 			name = Alpha;
 		};
@@ -712,10 +716,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = fr-swift/Info.plist;
+				INFOPLIST_FILE = "WBooks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.fr-swift;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wolox.WBooks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -733,12 +737,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = fr-swiftTests/Info.plist;
+				INFOPLIST_FILE = "WBooksTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.fr-swiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wolox.WBooksTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fr-swift.app/fr-swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WBooks.app/WBooks";
 			};
 			name = Release;
 		};
@@ -746,12 +750,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E17065131F75B6A10042755C /* Release.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = fr-swiftUITests/Info.plist;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "WBooksUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.fr-swiftUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wolox.WBooksUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WBooksUITests/WBooksUITests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = fr-swift;
+				TEST_TARGET_NAME = "WBooks";
 			};
 			name = Release;
 		};
@@ -815,10 +821,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = fr-swift/Info.plist;
+				INFOPLIST_FILE = "WBooks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D PRODUCTION";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fr-swift.fr-swift;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.WBooks.WBooks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -836,12 +842,12 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = fr-swiftTests/Info.plist;
+				INFOPLIST_FILE = "WBooksTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.fr-swiftTests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wolox.WBooksTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fr-swift.app/fr-swift";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WBooks.app/WBooks";
 			};
 			name = Production;
 		};
@@ -849,19 +855,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E12DE1621F772A370072C2FF /* Production.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = fr-swiftUITests/Info.plist;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "WBooksUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Wolox.fr-swiftUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Wolox.WBooksUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WBooksUITests/WBooksUITests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = fr-swift;
+				TEST_TARGET_NAME = "WBooks";
 			};
 			name = Production;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D1574FC1CB1B27500EA395E /* Build configuration list for PBXProject "fr-swift" */ = {
+		9D1574FC1CB1B27500EA395E /* Build configuration list for PBXProject "WBooks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE39E8751D1DAED00004FE95 /* Debug */,
@@ -872,7 +880,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		9D1575291CB1B27500EA395E /* Build configuration list for PBXNativeTarget "fr-swift" */ = {
+		9D1575291CB1B27500EA395E /* Build configuration list for PBXNativeTarget "WBooks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE39E8761D1DAED00004FE95 /* Debug */,
@@ -883,7 +891,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		9D15752C1CB1B27500EA395E /* Build configuration list for PBXNativeTarget "fr-swiftTests" */ = {
+		9D15752C1CB1B27500EA395E /* Build configuration list for PBXNativeTarget "WBooksTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE39E8771D1DAED00004FE95 /* Debug */,
@@ -894,7 +902,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		9D15752F1CB1B27500EA395E /* Build configuration list for PBXNativeTarget "fr-swiftUITests" */ = {
+		9D15752F1CB1B27500EA395E /* Build configuration list for PBXNativeTarget "WBooksUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE39E8781D1DAED00004FE95 /* Debug */,

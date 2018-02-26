@@ -8,7 +8,7 @@
 
 import XCTest
 
-class fr-swiftUITests: XCTestCase {
+class frswiftUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

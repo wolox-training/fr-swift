@@ -10,7 +10,7 @@ import Quick
 import Nimble
 import fr-swift
 
-final class fr-swiftSpec: QuickSpec {
+final class frswiftSpec: QuickSpec {
     
     override func spec() {
         
