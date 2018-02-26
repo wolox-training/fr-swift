@@ -1,8 +1,8 @@
-xcodeproj: ./BaseProject.xcodeproj
-scheme: BaseProject
+xcodeproj: ./fr-swift.xcodeproj
+scheme: fr-swift
 ignore:
-  - BaseProject/AppDelegate.swift
-  - BaseProject/Environment.swift
-  - BaseProject/Services/RollbarService.swift
-  - BaseProjectTests/*
-  - BaseProjectUITests/*
+  - fr-swift/AppDelegate.swift
+  - fr-swift/Environment.swift
+  - fr-swift/Services/RollbarService.swift
+  - fr-swiftTests/*
+  - fr-swiftUITests/*

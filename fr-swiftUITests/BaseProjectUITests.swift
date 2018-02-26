@@ -1,6 +1,6 @@
 //
-//  BaseProjectUITests.swift
-//  BaseProjectUITests
+//  fr-swiftUITests.swift
+//  fr-swiftUITests
 //
 //  Created by Guido Marucci Blas on 4/3/16.
 //  Copyright © 2016 Wolox. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class BaseProjectUITests: XCTestCase {
+class fr-swiftUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()
