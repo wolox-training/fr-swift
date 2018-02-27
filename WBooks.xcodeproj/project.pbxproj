@@ -20,6 +20,8 @@
 		9D6E405B1CB1B93A008CE558 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40561CB1B93A008CE558 /* Result.framework */; };
 		C824FAFC20445B3900CDBF31 /* WBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824FAFB20445B3900CDBF31 /* WBooksUITests.swift */; };
 		C8798FE62040B7AE00EACA53 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8798FE52040B7AE00EACA53 /* Default-568h@2x.png */; };
+		C8FFA9332045A8B00061C1DE /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8FFA9322045A8B00061C1DE /* View.xib */; };
+		C8FFA9352045A8DA0061C1DE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFA9342045A8DA0061C1DE /* View.swift */; };
 		CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB934DC1D21992100DF75C2 /* Environment.swift */; };
 		CED934881E8466A60017CF96 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED934861E8466A60017CF96 /* Core.framework */; };
 		CED934891E8466A60017CF96 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED934871E8466A60017CF96 /* ReactiveSwift.framework */; };
@@ -78,6 +80,8 @@
 		9D6E40561CB1B93A008CE558 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		C824FAFB20445B3900CDBF31 /* WBooksUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBooksUITests.swift; sourceTree = "<group>"; };
 		C8798FE52040B7AE00EACA53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C8FFA9322045A8B00061C1DE /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		C8FFA9342045A8DA0061C1DE /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		CEB934DC1D21992100DF75C2 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		CEB934E11D21A49A00DF75C2 /* Alpha.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Alpha.xcconfig; sourceTree = "<group>"; };
 		CED934861E8466A60017CF96 /* Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Core.framework; path = Carthage/Build/iOS/Core.framework; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 				CEB934DE1D21A44700DF75C2 /* ConfigurationFiles */,
 				9D1575041CB1B27500EA395E /* AppDelegate.swift */,
 				9D1575061CB1B27500EA395E /* ViewController.swift */,
+				C8FFA9342045A8DA0061C1DE /* View.swift */,
+				C8FFA9322045A8B00061C1DE /* View.xib */,
 				9D15750B1CB1B27500EA395E /* Assets.xcassets */,
 				9D15750D1CB1B27500EA395E /* LaunchScreen.storyboard */,
 				9D1575101CB1B27500EA395E /* Info.plist */,
@@ -326,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8FFA9332045A8B00061C1DE /* View.xib in Resources */,
 				9D15750F1CB1B27500EA395E /* LaunchScreen.storyboard in Resources */,
 				9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */,
 				C8798FE62040B7AE00EACA53 /* Default-568h@2x.png in Resources */,
@@ -392,6 +399,7 @@
 			files = (
 				9D1575071CB1B27500EA395E /* ViewController.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
+				C8FFA9352045A8DA0061C1DE /* View.swift in Sources */,
 				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,
 				9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */,
 			);

@@ -7,25 +7,30 @@
 //
 
 import UIKit
+import Core
 
 final class ViewController: UIViewController {
 
+    fileprivate lazy var _myView: View = View.loadFromNib()!
+    
+    override func loadView() {
+        view = _myView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.white
-        
-        let frame = CGRect(x: 0, y: view.frame.size.height / 2 - 11, width: view.frame.size.width, height: 22)
-        let label = UILabel(frame: frame)
-        label.text = "Welcome! This is a new blank project"
-        label.textAlignment = .center
-        label.sizeToFit()
-        view.addSubview(label)
+        _myView.loginButton.addTarget(self, action: #selector(click(sender:)), for: .touchUpInside)
     }
-
+    
+    @objc
+    func click(sender: UIButton) {
+        print("click")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
-
 }
