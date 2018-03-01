@@ -19,29 +19,46 @@
                 <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HJU-es-OIe">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bc_inicio" translatesAutoresizingMaskIntoConstraints="NO" id="fUK-ES-SQ5">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        </imageView>
-                    </subviews>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zY7-1V-KPo">
-                    <rect key="frame" x="70" y="397" width="235" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                    <state key="normal" title="INGRESAR CON GOOGLE">
-                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wolox_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kA5-Ba-BFx">
-                    <rect key="frame" x="44" y="183" width="286" height="192"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bc_inicio" translatesAutoresizingMaskIntoConstraints="NO" id="fUK-ES-SQ5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zY7-1V-KPo">
+                    <rect key="frame" x="58" y="397" width="260" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <state key="normal" title="INGRESAR CON GOOGLE">
+                        <color key="titleColor" red="0.82148180509868418" green="0.82148180509868418" blue="0.82148180509868418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AzY-eN-72d">
+                    <rect key="frame" x="16" y="550" width="343" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wolox_logo" translatesAutoresizingMaskIntoConstraints="NO" id="kA5-Ba-BFx">
+                    <rect key="frame" x="44" y="156" width="286" height="192"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9y-ES-8OD">
+                    <rect key="frame" x="142" y="457" width="90" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <state key="normal" title="LOG OUT">
+                        <color key="titleColor" white="0.3784393675298805" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="fondo" destination="fUK-ES-SQ5" id="AZj-xe-vgt"/>
+                <outlet property="logOutButton" destination="l9y-ES-8OD" id="iPT-wN-TFj"/>
                 <outlet property="loginButton" destination="zY7-1V-KPo" id="hel-En-Xp1"/>
+                <outlet property="statusText" destination="AzY-eN-72d" id="gXy-tI-5R2"/>
                 <outlet property="woloxLogoImage" destination="kA5-Ba-BFx" id="5u2-bd-X83"/>
             </connections>
             <point key="canvasLocation" x="24.5" y="51.5"/>

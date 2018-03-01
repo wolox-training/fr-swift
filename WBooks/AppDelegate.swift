@@ -7,33 +7,75 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
+    
     var window: UIWindow?
-
+    
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        if Environment.isTestTarget {
-            return true
-        }
+        window = UIWindow()
         
-        /*
-         * Uncomment this and remove this comment once Rollbar service is enabled
-         * and the keys are properly configured in the configuration files.
-         *
-        RollbarService().initialize()
-         *
-         */
+        //Creates the navifationController and sets the first view.
+        let myViewController = ViewController()
+        let navController = UINavigationController(rootViewController: myViewController)
+        window?.rootViewController = navController
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ViewController()
-        window?.makeKeyAndVisible()
-        
+        // Initialize sign-in
+        GIDSignIn.sharedInstance().clientID = "770844318431-lbb1uq0ppnhpe4mvfd0ve03iqknp4sj5.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().delegate = self
         return true
     }
-
+    
+    func application(_ application: UIApplication,
+                     open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url,
+                                                 sourceApplication: sourceApplication,
+                                                 annotation: annotation)
+    }
+    
+    @available(iOS 9.0, *)
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url,
+                                                 sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                                 annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
+              withError error: Error!) {
+        if let error = error {
+            print("\(error.localizedDescription)")
+            // [START_EXCLUDE silent]
+            NotificationCenter.default.post(
+                name: Notification.Name(rawValue: "ToggleAuthUINotification"), object: nil, userInfo: nil)
+            // [END_EXCLUDE]
+        } else {
+            // Perform any operations on signed in user here.
+            let userId = user.userID
+            let idToken = user.authentication.idToken
+            let fullName = user.profile.name
+            // [START_EXCLUDE]
+            NotificationCenter.default.post(
+                name: Notification.Name(rawValue: "ToggleAuthUINotification"),
+                object: nil,
+                userInfo: ["statusText": "Signed in user:\n\(fullName)"])
+            // [END_EXCLUDE]
+        }
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
+              withError error: Error!) {
+        // Perform any operations when the user disconnects from app here.
+        // [START_EXCLUDE]
+        NotificationCenter.default.post(
+            name: Notification.Name(rawValue: "ToggleAuthUINotification"),
+            object: nil,
+            userInfo: ["statusText": "User has disconnected."])
+        // [END_EXCLUDE]
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. 
         // This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) 

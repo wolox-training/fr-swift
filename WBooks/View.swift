@@ -13,4 +13,7 @@ class View: UIView, NibLoadable {
     
     @IBOutlet weak var woloxLogoImage: UIImageView!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var logOutButton: UIButton!
+    @IBOutlet weak var statusText: UILabel!
+    @IBOutlet weak var fondo: UIImageView!
 }
