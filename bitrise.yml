@@ -47,7 +47,7 @@ workflows:
     - script@1.1.3:
         title: Calculating coverage...
         inputs:
-        - content: |- 
+        - content: |-
             #!/bin/bash
             set -ex
 
@@ -63,13 +63,13 @@ workflows:
     - opts:
         is_expand: true
       REPO_SLUG: wolox/app-repo-name
-    before_run: 
+    before_run:
 
 app:
   envs:
   - opts:
       is_expand: false
-    BITRISE_PROJECT_PATH: fr-swift.xcodeproj
+    BITRISE_PROJECT_PATH: WBooks.xcodeproj
   - opts:
       is_expand: false
-    BITRISE_SCHEME: fr-swift
+    BITRISE_SCHEME: WBooks
