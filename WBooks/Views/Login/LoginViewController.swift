@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  WBooks
 //
 //  Created by Guido Marucci Blas on 4/3/16.
@@ -10,9 +10,9 @@ import UIKit
 import Core
 import GoogleSignIn
 
-final class ViewController: UIViewController, GIDSignInUIDelegate {
+final class LoginViewController: UIViewController, GIDSignInUIDelegate {
 
-    fileprivate lazy var _myView: View = View.loadFromNib()!
+    fileprivate lazy var _myView: LoginView = LoginView.loadFromNib()!
     
     override func loadView() {
         view = _myView
@@ -89,8 +89,9 @@ final class ViewController: UIViewController, GIDSignInUIDelegate {
                 guard let userInfo = notification.userInfo as? [String:String] else { return }
                 self._myView.statusText.text = userInfo["statusText"]!
                 
-                let bibliotecaController = BibliotecaController()
-                self.navigationController?.pushViewController(bibliotecaController, animated: true)
+                let bibliotecaController = BibliotecaViewController()
+                let navController = UINavigationController(rootViewController: bibliotecaController)
+                present(navController, animated: true, completion: nil)
             }
         }
     }

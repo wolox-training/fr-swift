@@ -19,9 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         window = UIWindow()
         
         //Creates the navifationController and sets the first view.
-        let myViewController = ViewController()
-        let navController = UINavigationController(rootViewController: myViewController)
-        window?.rootViewController = navController
+        let myViewController = LoginViewController()
+        window?.rootViewController = myViewController
         
         // Initialize sign-in
         GIDSignIn.sharedInstance().clientID = "770844318431-lbb1uq0ppnhpe4mvfd0ve03iqknp4sj5.apps.googleusercontent.com"

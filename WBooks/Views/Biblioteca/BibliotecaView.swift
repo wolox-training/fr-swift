@@ -1,5 +1,5 @@
 //
-//  Biblioteca.swift
+//  BibliotecaView.swift
 //  WBooks
 //
 //  Created by Florencia Rosental on 28/02/2018.
@@ -9,7 +9,7 @@
 import Foundation
 import Core
 
-class Biblioteca: UIView, NibLoadable {
+class BibliotecaView: UIView, NibLoadable {
     
 
 }
