@@ -8,11 +8,16 @@
 
 import UIKit
 import GoogleSignIn
+import Networking
+import AlamofireNetworkActivityIndicator
+import AlamofireNetworkActivityLogger
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
     
     var window: UIWindow?
+    
+    private let networkingConfigLauncher = NetworkingConfigurationLauncher()
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -25,6 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         // Initialize sign-in
         GIDSignIn.sharedInstance().clientID = "770844318431-lbb1uq0ppnhpe4mvfd0ve03iqknp4sj5.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
+        
+        networkingConfigLauncher.launch()
+        
         return true
     }
     

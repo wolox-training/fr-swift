@@ -11,6 +11,7 @@ import Core
 
 class BibliotecaView: UIView, NibLoadable {
     
-
+    @IBOutlet weak var booksTable: UITableView!
+    
 }
 
