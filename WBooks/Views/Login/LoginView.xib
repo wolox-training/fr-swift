@@ -32,7 +32,7 @@
                         <color key="titleColor" red="0.82148180509868418" green="0.82148180509868418" blue="0.82148180509868418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AzY-eN-72d">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AzY-eN-72d">
                     <rect key="frame" x="16" y="550" width="343" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -55,11 +55,9 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="fondo" destination="fUK-ES-SQ5" id="AZj-xe-vgt"/>
+                <outlet property="logInButton" destination="zY7-1V-KPo" id="hel-En-Xp1"/>
                 <outlet property="logOutButton" destination="l9y-ES-8OD" id="iPT-wN-TFj"/>
-                <outlet property="loginButton" destination="zY7-1V-KPo" id="hel-En-Xp1"/>
                 <outlet property="statusText" destination="AzY-eN-72d" id="gXy-tI-5R2"/>
-                <outlet property="woloxLogoImage" destination="kA5-Ba-BFx" id="5u2-bd-X83"/>
             </connections>
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
