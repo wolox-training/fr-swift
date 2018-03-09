@@ -7,31 +7,38 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
+    
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        if Environment.isTestTarget {
-            return true
-        }
+        window = UIWindow()
         
-        /*
-         * Uncomment this and remove this comment once Rollbar service is enabled
-         * and the keys are properly configured in the configuration files.
-         *
-        RollbarService().initialize()
-         *
-         */
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = ViewController()
-        window?.makeKeyAndVisible()
-        
+        // Initialize sign-in
+        GIDSignIn.sharedInstance().clientID = "770844318431-lbb1uq0ppnhpe4mvfd0ve03iqknp4sj5.apps.googleusercontent.com"
+
+        //Sets the first view.
+        let myViewController = LoginViewController()
+        window?.rootViewController = myViewController
         return true
+    }
+    
+    func application(_ application: UIApplication,
+                     open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url,
+                                                 sourceApplication: sourceApplication,
+                                                 annotation: annotation)
+    }
+    
+    @available(iOS 9.0, *)
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url,
+                                                 sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String,
+                                                 annotation: options[UIApplicationOpenURLOptionsKey.annotation])
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

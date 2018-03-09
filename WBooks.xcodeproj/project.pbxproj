@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575041CB1B27500EA395E /* AppDelegate.swift */; };
-		9D1575071CB1B27500EA395E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575061CB1B27500EA395E /* ViewController.swift */; };
 		9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D15750B1CB1B27500EA395E /* Assets.xcassets */; };
 		9D15750F1CB1B27500EA395E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D15750D1CB1B27500EA395E /* LaunchScreen.storyboard */; };
 		9D15751A1CB1B27500EA395E /* WBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575191CB1B27500EA395E /* WBooksTests.swift */; };
@@ -18,8 +17,17 @@
 		9D1F7A751CBED82900E20BE5 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9D1F7A701CBED81900E20BE5 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9D6E405A1CB1B93A008CE558 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */; };
 		9D6E405B1CB1B93A008CE558 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40561CB1B93A008CE558 /* Result.framework */; };
+		C80B30912045D9BD00479DEC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575061CB1B27500EA395E /* LoginViewController.swift */; };
+		C80B30932045DAE900479DEC /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80B30922045DAE900479DEC /* SafariServices.framework */; };
+		C80B30A72045F43100479DEC /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80B30A52045F43000479DEC /* GoogleSignInDependencies.framework */; };
+		C80B30A82045F43100479DEC /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80B30A62045F43000479DEC /* GoogleSignIn.framework */; };
 		C824FAFC20445B3900CDBF31 /* WBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824FAFB20445B3900CDBF31 /* WBooksUITests.swift */; };
+		C8429B98204722CC008A84F8 /* BibliotecaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8429B97204722CC008A84F8 /* BibliotecaView.swift */; };
+		C8429B9A204722EA008A84F8 /* BibliotecaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8429B99204722EA008A84F8 /* BibliotecaView.xib */; };
+		C8429B9C20472302008A84F8 /* BibliotecaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8429B9B20472302008A84F8 /* BibliotecaViewController.swift */; };
+		C8429B9D20472D77008A84F8 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8FFA9322045A8B00061C1DE /* LoginView.xib */; };
 		C8798FE62040B7AE00EACA53 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8798FE52040B7AE00EACA53 /* Default-568h@2x.png */; };
+		C8FFA9352045A8DA0061C1DE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFA9342045A8DA0061C1DE /* LoginView.swift */; };
 		CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB934DC1D21992100DF75C2 /* Environment.swift */; };
 		CED934881E8466A60017CF96 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED934861E8466A60017CF96 /* Core.framework */; };
 		CED934891E8466A60017CF96 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED934871E8466A60017CF96 /* ReactiveSwift.framework */; };
@@ -63,7 +71,7 @@
 /* Begin PBXFileReference section */
 		9D1575011CB1B27500EA395E /* WBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1575041CB1B27500EA395E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D1575061CB1B27500EA395E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D1575061CB1B27500EA395E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D15750B1CB1B27500EA395E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D15750E1CB1B27500EA395E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D1575101CB1B27500EA395E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,8 +84,17 @@
 		9D1F7A701CBED81900E20BE5 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		9D6E40561CB1B93A008CE558 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		C80B30922045DAE900479DEC /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		C80B30962045EEE500479DEC /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		C80B30A52045F43000479DEC /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = Frameworks/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		C80B30A62045F43000479DEC /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Frameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
 		C824FAFB20445B3900CDBF31 /* WBooksUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBooksUITests.swift; sourceTree = "<group>"; };
+		C8429B97204722CC008A84F8 /* BibliotecaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaView.swift; sourceTree = "<group>"; };
+		C8429B99204722EA008A84F8 /* BibliotecaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BibliotecaView.xib; sourceTree = "<group>"; };
+		C8429B9B20472302008A84F8 /* BibliotecaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaViewController.swift; sourceTree = "<group>"; };
 		C8798FE52040B7AE00EACA53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		C8FFA9322045A8B00061C1DE /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		C8FFA9342045A8DA0061C1DE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CEB934DC1D21992100DF75C2 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		CEB934E11D21A49A00DF75C2 /* Alpha.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Alpha.xcconfig; sourceTree = "<group>"; };
 		CED934861E8466A60017CF96 /* Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Core.framework; path = Carthage/Build/iOS/Core.framework; sourceTree = "<group>"; };
@@ -96,7 +113,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C80B30A72045F43100479DEC /* GoogleSignInDependencies.framework in Frameworks */,
+				C80B30A82045F43100479DEC /* GoogleSignIn.framework in Frameworks */,
 				E1530D9E1ED382EA002A9002 /* SystemConfiguration.framework in Frameworks */,
+				C80B30932045DAE900479DEC /* SafariServices.framework in Frameworks */,
 				E1530D991ED378F2002A9002 /* Rollbar.framework in Frameworks */,
 				CED9348B1E8466CE0017CF96 /* MBProgressHUD.framework in Frameworks */,
 				CED934881E8466A60017CF96 /* Core.framework in Frameworks */,
@@ -150,10 +170,10 @@
 		9D1575031CB1B27500EA395E /* WBooks */ = {
 			isa = PBXGroup;
 			children = (
+				C867E39A20487DD90018FEB7 /* Views */,
 				E1530D9A1ED378F9002A9002 /* Services */,
 				CEB934DE1D21A44700DF75C2 /* ConfigurationFiles */,
 				9D1575041CB1B27500EA395E /* AppDelegate.swift */,
-				9D1575061CB1B27500EA395E /* ViewController.swift */,
 				9D15750B1CB1B27500EA395E /* Assets.xcassets */,
 				9D15750D1CB1B27500EA395E /* LaunchScreen.storyboard */,
 				9D1575101CB1B27500EA395E /* Info.plist */,
@@ -183,6 +203,10 @@
 		9D6E405F1CB1BA21008CE558 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C80B30A62045F43000479DEC /* GoogleSignIn.framework */,
+				C80B30A52045F43000479DEC /* GoogleSignInDependencies.framework */,
+				C80B30962045EEE500479DEC /* GoogleSignIn.bundle */,
+				C80B30922045DAE900479DEC /* SafariServices.framework */,
 				E1530D9D1ED382EA002A9002 /* SystemConfiguration.framework */,
 				E1530D981ED378F2002A9002 /* Rollbar.framework */,
 				CED9348A1E8466CE0017CF96 /* MBProgressHUD.framework */,
@@ -194,6 +218,35 @@
 				9D6E40561CB1B93A008CE558 /* Result.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C867E39A20487DD90018FEB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C867E39C20487E000018FEB7 /* Biblioteca */,
+				C867E39B20487DF20018FEB7 /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C867E39B20487DF20018FEB7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9D1575061CB1B27500EA395E /* LoginViewController.swift */,
+				C8FFA9342045A8DA0061C1DE /* LoginView.swift */,
+				C8FFA9322045A8B00061C1DE /* LoginView.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C867E39C20487E000018FEB7 /* Biblioteca */ = {
+			isa = PBXGroup;
+			children = (
+				C8429B9B20472302008A84F8 /* BibliotecaViewController.swift */,
+				C8429B97204722CC008A84F8 /* BibliotecaView.swift */,
+				C8429B99204722EA008A84F8 /* BibliotecaView.xib */,
+			);
+			path = Biblioteca;
 			sourceTree = "<group>";
 		};
 		CEB934DE1D21A44700DF75C2 /* ConfigurationFiles */ = {
@@ -327,7 +380,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D15750F1CB1B27500EA395E /* LaunchScreen.storyboard in Resources */,
+				C8429B9D20472D77008A84F8 /* LoginView.xib in Resources */,
 				9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */,
+				C8429B9A204722EA008A84F8 /* BibliotecaView.xib in Resources */,
 				C8798FE62040B7AE00EACA53 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,10 +445,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D1575071CB1B27500EA395E /* ViewController.swift in Sources */,
+				C8429B9C20472302008A84F8 /* BibliotecaViewController.swift in Sources */,
+				C80B30912045D9BD00479DEC /* LoginViewController.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
+				C8FFA9352045A8DA0061C1DE /* LoginView.swift in Sources */,
 				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,
 				9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */,
+				C8429B98204722CC008A84F8 /* BibliotecaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +542,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,6 +563,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = WBooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -591,6 +654,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -608,6 +675,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = WBooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -697,6 +765,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
@@ -715,6 +787,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = WBooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -803,6 +876,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -820,6 +897,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = WBooks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
