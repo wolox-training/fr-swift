@@ -31,12 +31,12 @@ final class LoginViewController: UIViewController, GIDSignInUIDelegate {
         GIDSignIn.sharedInstance().delegate = self
         
         // Automatically signs in the user, if there is a user already authenticated.
-        if GIDSignIn.sharedInstance().hasAuthInKeychain() == true {
+        if GIDSignIn.sharedInstance().hasAuthInKeychain(){
             GIDSignIn.sharedInstance().signInSilently()
         }
         
         _myView.statusText.text = "Initialized Swift app..."
-        toggleAuthUI()
+        changeUI(forLoggedIn: GIDSignIn.sharedInstance().hasAuthInKeychain())
     }
     
     @objc
@@ -50,14 +50,14 @@ final class LoginViewController: UIViewController, GIDSignInUIDelegate {
     func logOutClick(sender: AnyObject) {
         GIDSignIn.sharedInstance().signOut()
         _myView.statusText.text = "Signed out."
-        toggleAuthUI()
+        changeUI(forLoggedIn: GIDSignIn.sharedInstance().hasAuthInKeychain())
     }
   
     //Defines which button has be to shown, depending if the user has to log in, of if it's already logged.
-    func toggleAuthUI() {
-        _myView.logInButton.isHidden = GIDSignIn.sharedInstance().hasAuthInKeychain()
-        _myView.logOutButton.isHidden = !GIDSignIn.sharedInstance().hasAuthInKeychain()
-        _myView.statusText.text = GIDSignIn.sharedInstance().hasAuthInKeychain() ? "Already logged in" : "Google Sign in\niOS Demo"
+    func changeUI(forLoggedIn loggedIn: Bool) {
+        _myView.logInButton.isHidden = loggedIn
+        _myView.logOutButton.isHidden = !loggedIn
+        _myView.statusText.text = loggedIn ? "Already logged in" : "Google Sign in\niOS Demo"
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -72,7 +72,7 @@ extension LoginViewController: GIDSignInDelegate {
         } else {
             let bibliotecaController = BibliotecaViewController()
             let navController = UINavigationController(rootViewController: bibliotecaController)
-            present(navController, animated: true, completion: nil)
+            present(navController, animated: true, completion: .none)
         }
     }
 }
