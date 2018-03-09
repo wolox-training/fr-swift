@@ -24,7 +24,11 @@
 		C80B30932045DAE900479DEC /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80B30922045DAE900479DEC /* SafariServices.framework */; };
 		C80B30A72045F43100479DEC /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80B30A52045F43000479DEC /* GoogleSignInDependencies.framework */; };
 		C80B30A82045F43100479DEC /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80B30A62045F43000479DEC /* GoogleSignIn.framework */; };
+		C81D3CB1204F176400DC494C /* BookCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C81D3CB0204F176400DC494C /* BookCellView.xib */; };
+		C81D3CB3204F177300DC494C /* BookCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81D3CB2204F177300DC494C /* BookCellView.swift */; };
+		C81D3CB6204F311A00DC494C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81D3CB5204F311A00DC494C /* UIColorExtensions.swift */; };
 		C824FAFC20445B3900CDBF31 /* WBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824FAFB20445B3900CDBF31 /* WBooksUITests.swift */; };
+		C833099F205056B900D6FB30 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C833099E205056B900D6FB30 /* User.swift */; };
 		C8429B98204722CC008A84F8 /* BibliotecaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8429B97204722CC008A84F8 /* BibliotecaView.swift */; };
 		C8429B9A204722EA008A84F8 /* BibliotecaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8429B99204722EA008A84F8 /* BibliotecaView.xib */; };
 		C8429B9C20472302008A84F8 /* BibliotecaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8429B9B20472302008A84F8 /* BibliotecaViewController.swift */; };
@@ -105,7 +109,11 @@
 		C80B30962045EEE500479DEC /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
 		C80B30A52045F43000479DEC /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignInDependencies.framework; path = Frameworks/GoogleSignInDependencies.framework; sourceTree = "<group>"; };
 		C80B30A62045F43000479DEC /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Frameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
+		C81D3CB0204F176400DC494C /* BookCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCellView.xib; sourceTree = "<group>"; };
+		C81D3CB2204F177300DC494C /* BookCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellView.swift; sourceTree = "<group>"; };
+		C81D3CB5204F311A00DC494C /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		C824FAFB20445B3900CDBF31 /* WBooksUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBooksUITests.swift; sourceTree = "<group>"; };
+		C833099E205056B900D6FB30 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C8429B97204722CC008A84F8 /* BibliotecaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaView.swift; sourceTree = "<group>"; };
 		C8429B99204722EA008A84F8 /* BibliotecaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BibliotecaView.xib; sourceTree = "<group>"; };
 		C8429B9B20472302008A84F8 /* BibliotecaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaViewController.swift; sourceTree = "<group>"; };
@@ -277,8 +285,18 @@
 			isa = PBXGroup;
 			children = (
 				C8005F562049E4AA0094AFE1 /* Book.swift */,
+				C833099E205056B900D6FB30 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C81D3CAF204F171C00DC494C /* Cell_TableView */ = {
+			isa = PBXGroup;
+			children = (
+				C81D3CB0204F176400DC494C /* BookCellView.xib */,
+				C81D3CB2204F177300DC494C /* BookCellView.swift */,
+			);
+			path = Cell_TableView;
 			sourceTree = "<group>";
 		};
 		C867E39A20487DD90018FEB7 /* Views */ = {
@@ -303,8 +321,9 @@
 		C867E39C20487E000018FEB7 /* Biblioteca */ = {
 			isa = PBXGroup;
 			children = (
-				C8429B9B20472302008A84F8 /* BibliotecaViewController.swift */,
+				C81D3CAF204F171C00DC494C /* Cell_TableView */,
 				C8429B97204722CC008A84F8 /* BibliotecaView.swift */,
+				C8429B9B20472302008A84F8 /* BibliotecaViewController.swift */,
 				C8429B99204722EA008A84F8 /* BibliotecaView.xib */,
 				C875BFE3204D959D000E2076 /* BibliotecaViewModel.swift */,
 			);
@@ -315,6 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				C875BFE6204D99FD000E2076 /* StringExtension.swift */,
+				C81D3CB5204F311A00DC494C /* UIColorExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -462,6 +482,7 @@
 				9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */,
 				C8429B9A204722EA008A84F8 /* BibliotecaView.xib in Resources */,
 				C8798FE62040B7AE00EACA53 /* Default-568h@2x.png in Resources */,
+				C81D3CB1204F176400DC494C /* BookCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C875BFE4204D959D000E2076 /* BibliotecaViewModel.swift in Sources */,
+				C81D3CB3204F177300DC494C /* BookCellView.swift in Sources */,
 				C8005F522049DCCC0094AFE1 /* NetworkingConfigurationLauncher.swift in Sources */,
 				C8005F542049E1340094AFE1 /* BibliotecaRepository.swift in Sources */,
 				C8429B9C20472302008A84F8 /* BibliotecaViewController.swift in Sources */,
@@ -539,9 +561,11 @@
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
 				C8FFA9352045A8DA0061C1DE /* LoginView.swift in Sources */,
 				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,
+				C81D3CB6204F311A00DC494C /* UIColorExtensions.swift in Sources */,
 				C875BFE7204D99FD000E2076 /* StringExtension.swift in Sources */,
 				9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */,
 				C8005F572049E4AA0094AFE1 /* Book.swift in Sources */,
+				C833099F205056B900D6FB30 /* User.swift in Sources */,
 				C8CF75C4204DA2160025F3E7 /* RepositoryManager.swift in Sources */,
 				C8429B98204722CC008A84F8 /* BibliotecaView.swift in Sources */,
 			);

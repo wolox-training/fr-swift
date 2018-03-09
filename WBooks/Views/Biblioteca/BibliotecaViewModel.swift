@@ -14,18 +14,26 @@ class BibliotecaViewModel {
     fileprivate let _biblioRepo: BibliotecaRepositoryType
     let books = MutableProperty<[Book]>([])
     
-    init(biblioRepo: BibliotecaRepositoryType = RepositoryManager.shared.createBibliotecaRepo()) {
+    init(biblioRepo: BibliotecaRepositoryType = RepositoryManager.shared.createBibliotecaRepository()) {
         _biblioRepo = biblioRepo
         
         fetchBooks()
     }
     
     func fetchBooks() {
-//        _biblioRepo.fetchBooks().startValues { [unowned self] books in
-//            self.books.value = books
-//        }
+        let a = _biblioRepo.fetchBooks()
         
-        books <~ _biblioRepo.fetchBooks().liftError()
+        a.startWithResult { [unowned self] result in
+            switch result {
+            case .success(let value):
+                self.books.value = value
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+        //Another way of doing this
+        // books <~ _biblioRepo.fetchBooks().liftError()
     }
 
 }

@@ -25,8 +25,8 @@ class NetworkingConfigurationLauncher {
 private extension NetworkingConfigurationLauncher {
     
     func enableAlamofireNetworkActivityLogger() {
-        NetworkActivityLogger.shared.startLogging()
         NetworkActivityLogger.shared.level = .debug
+        NetworkActivityLogger.shared.startLogging()
     }
     
     func enableNetworkActivityIndicatorManager() {
@@ -37,4 +37,3 @@ private extension NetworkingConfigurationLauncher {
         _sessionManager.bootstrap()
     }
 }
-

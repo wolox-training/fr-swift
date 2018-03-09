@@ -9,10 +9,12 @@
 import UIKit
 import Core
 import GoogleSignIn
+import Networking
 
 final class LoginViewController: UIViewController, GIDSignInUIDelegate {
 
     fileprivate lazy var _myView: LoginView = LoginView.loadFromNib()!
+    fileprivate let _sessionManager = SessionManager()
     
     override func loadView() {
         view = _myView
@@ -41,6 +43,7 @@ final class LoginViewController: UIViewController, GIDSignInUIDelegate {
     func logInClick(sender: UIButton) {
         _myView.statusText.text = "Logging..."
         GIDSignIn.sharedInstance().signIn()
+        
     }
     
     @objc
@@ -57,12 +60,9 @@ final class LoginViewController: UIViewController, GIDSignInUIDelegate {
         _myView.statusText.text = GIDSignIn.sharedInstance().hasAuthInKeychain() ? "Already logged in" : "Google Sign in\niOS Demo"
     }
     
-    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return UIStatusBarStyle.lightContent
     }
-    
-  
 }
 
 extension LoginViewController: GIDSignInDelegate {
