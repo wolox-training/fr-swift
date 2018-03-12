@@ -1,5 +1,5 @@
 //
-//  BibliotecaViewController.swift
+//  LibraryViewController.swift
 //  WBooks
 //
 //  Created by Florencia Rosental on 28/02/2018.
@@ -13,11 +13,11 @@ import Networking
 import AlamofireNetworkActivityIndicator
 import AlamofireNetworkActivityLogger
 
-final class BibliotecaViewController: UIViewController {
+final class LibraryViewController: UIViewController {
     
-    fileprivate lazy var _myView: BibliotecaView = BibliotecaView.loadFromNib()!
+    fileprivate lazy var _myView: LibraryView = LibraryView.loadFromNib()!
     fileprivate let _sessionManager = SessionManager()
-    fileprivate let _viewModel = BibliotecaViewModel()
+    fileprivate let _viewModel = LibraryViewModel()
     
     override func loadView() {
         view = _myView
@@ -34,14 +34,14 @@ final class BibliotecaViewController: UIViewController {
     }
  
     func createRepositories() {
-        let repository = BibliotecaRepository(
+        let repository = LibraryRepository(
             networkingConfiguration: RepositoryManager.shared.networkingConfiguration,
             sessionManager: _sessionManager)
     }
 }
 
 // MARK: - UITableViewDelegate & UITableViewDataSource
-extension BibliotecaViewController: UITableViewDelegate, UITableViewDataSource {
+extension LibraryViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return _viewModel.books.value.count
@@ -51,16 +51,14 @@ extension BibliotecaViewController: UITableViewDelegate, UITableViewDataSource {
         if let cell = _myView.booksTable.dequeueReusableCell(withIdentifier: "BookCellView") as? BookCellView {
             cell.title.text = _viewModel.books.value[indexPath.row].title
             cell.author.text = _viewModel.books.value[indexPath.row].author
+            //cell.frontCover.image = getFrontCoverImage(imageURL: _viewModel.books.value[indexPath.row].imageURL)
             
-            var catPictureURL = URL(string: "http://www.freeiconspng.com/uploads/no-image-icon-1.jpg")!
-            
-            if _viewModel.books.value[indexPath.row].imageURL != .none{
-                catPictureURL = URL(string: _viewModel.books.value[indexPath.row].imageURL!)!
-            }
-            
+            let photo = _viewModel.books.value[indexPath.row].imageURL ?? "http://www.freeiconspng.com/uploads/no-image-icon-1.jpg"
+            var catPictureURL = URL(string: photo)!
+
             // Creating a session object with the default configuration.
             let session = URLSession(configuration: .default)
-            
+
             // Define a download task. The download task will download the contents of the URL as a Data object.
             let downloadPicTask = session.dataTask(with: catPictureURL) { (data, response, error) in
                 // The download has finished.
@@ -78,7 +76,7 @@ extension BibliotecaViewController: UITableViewDelegate, UITableViewDataSource {
                     }
                 }
             }
-            
+
             downloadPicTask.resume()
             
             return cell
@@ -93,7 +91,36 @@ extension BibliotecaViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 // MARK: - Private Methods
-fileprivate extension BibliotecaViewController {
+fileprivate extension LibraryViewController {
+//    func getFrontCoverImage(imageURL: String?) -> UIImage {
+//        let photo = imageURL ?? "http://www.freeiconspng.com/uploads/no-image-icon-1.jpg"
+//        var catPictureURL = URL(string: photo)!
+//        var imageResult: UIImage = UIImage()
+//
+//        // Creating a session object with the default configuration.
+//        let session = URLSession(configuration: .default)
+//
+//        // Define a download task. The download task will download the contents of the URL as a Data object.
+//        let downloadPicTask = session.dataTask(with: catPictureURL) { (data, response, error) in
+//            // The download has finished.
+//            if let e = error {
+//                print("Error downloading picture: \(e)")
+//            } else {
+//                // No errors found.
+//                if let res = response as? HTTPURLResponse {
+//                    if let imageData = data {
+//                        // Converts that Data into an image.
+//                        imageResult = UIImage(data: imageData)!
+//                    }
+//                } else {
+//                    print("Couldn't get response code for some reason")
+//                }
+//            }
+//        }
+//        downloadPicTask.resume()
+//
+//        return imageResult
+//    }
     
     func setUpTable() {
         _myView.booksTable.register(UINib(nibName: "BookCellView", bundle: nil), forCellReuseIdentifier: "BookCellView")

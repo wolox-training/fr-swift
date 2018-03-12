@@ -18,7 +18,7 @@
 		9D6E405A1CB1B93A008CE558 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */; };
 		9D6E405B1CB1B93A008CE558 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6E40561CB1B93A008CE558 /* Result.framework */; };
 		C8005F522049DCCC0094AFE1 /* NetworkingConfigurationLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8005F512049DCCC0094AFE1 /* NetworkingConfigurationLauncher.swift */; };
-		C8005F542049E1340094AFE1 /* BibliotecaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8005F532049E1340094AFE1 /* BibliotecaRepository.swift */; };
+		C8005F542049E1340094AFE1 /* LibraryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8005F532049E1340094AFE1 /* LibraryRepository.swift */; };
 		C8005F572049E4AA0094AFE1 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8005F562049E4AA0094AFE1 /* Book.swift */; };
 		C80B30912045D9BD00479DEC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1575061CB1B27500EA395E /* LoginViewController.swift */; };
 		C80B30932045DAE900479DEC /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C80B30922045DAE900479DEC /* SafariServices.framework */; };
@@ -29,11 +29,11 @@
 		C81D3CB6204F311A00DC494C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81D3CB5204F311A00DC494C /* UIColorExtensions.swift */; };
 		C824FAFC20445B3900CDBF31 /* WBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824FAFB20445B3900CDBF31 /* WBooksUITests.swift */; };
 		C833099F205056B900D6FB30 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C833099E205056B900D6FB30 /* User.swift */; };
-		C8429B98204722CC008A84F8 /* BibliotecaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8429B97204722CC008A84F8 /* BibliotecaView.swift */; };
-		C8429B9A204722EA008A84F8 /* BibliotecaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8429B99204722EA008A84F8 /* BibliotecaView.xib */; };
-		C8429B9C20472302008A84F8 /* BibliotecaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8429B9B20472302008A84F8 /* BibliotecaViewController.swift */; };
+		C8429B98204722CC008A84F8 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8429B97204722CC008A84F8 /* LibraryView.swift */; };
+		C8429B9A204722EA008A84F8 /* LibraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8429B99204722EA008A84F8 /* LibraryView.xib */; };
+		C8429B9C20472302008A84F8 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8429B9B20472302008A84F8 /* LibraryViewController.swift */; };
 		C8429B9D20472D77008A84F8 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8FFA9322045A8B00061C1DE /* LoginView.xib */; };
-		C875BFE4204D959D000E2076 /* BibliotecaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C875BFE3204D959D000E2076 /* BibliotecaViewModel.swift */; };
+		C875BFE4204D959D000E2076 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C875BFE3204D959D000E2076 /* LibraryViewModel.swift */; };
 		C875BFE7204D99FD000E2076 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C875BFE6204D99FD000E2076 /* StringExtension.swift */; };
 		C8798FE62040B7AE00EACA53 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8798FE52040B7AE00EACA53 /* Default-568h@2x.png */; };
 		C8CF75C4204DA2160025F3E7 /* RepositoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CF75C3204DA2160025F3E7 /* RepositoryManager.swift */; };
@@ -103,7 +103,7 @@
 		9D6E40551CB1B939008CE558 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		9D6E40561CB1B93A008CE558 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		C8005F512049DCCC0094AFE1 /* NetworkingConfigurationLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConfigurationLauncher.swift; sourceTree = "<group>"; };
-		C8005F532049E1340094AFE1 /* BibliotecaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaRepository.swift; sourceTree = "<group>"; };
+		C8005F532049E1340094AFE1 /* LibraryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRepository.swift; sourceTree = "<group>"; };
 		C8005F562049E4AA0094AFE1 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		C80B30922045DAE900479DEC /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		C80B30962045EEE500479DEC /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
@@ -114,11 +114,11 @@
 		C81D3CB5204F311A00DC494C /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		C824FAFB20445B3900CDBF31 /* WBooksUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBooksUITests.swift; sourceTree = "<group>"; };
 		C833099E205056B900D6FB30 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		C8429B97204722CC008A84F8 /* BibliotecaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaView.swift; sourceTree = "<group>"; };
-		C8429B99204722EA008A84F8 /* BibliotecaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BibliotecaView.xib; sourceTree = "<group>"; };
-		C8429B9B20472302008A84F8 /* BibliotecaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaViewController.swift; sourceTree = "<group>"; };
+		C8429B97204722CC008A84F8 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		C8429B99204722EA008A84F8 /* LibraryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryView.xib; sourceTree = "<group>"; };
+		C8429B9B20472302008A84F8 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		C875BFDA204D8E7F000E2076 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C875BFE3204D959D000E2076 /* BibliotecaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaViewModel.swift; sourceTree = "<group>"; };
+		C875BFE3204D959D000E2076 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
 		C875BFE6204D99FD000E2076 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		C8798FE52040B7AE00EACA53 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C8CF75C3204DA2160025F3E7 /* RepositoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryManager.swift; sourceTree = "<group>"; };
@@ -302,7 +302,7 @@
 		C867E39A20487DD90018FEB7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C867E39C20487E000018FEB7 /* Biblioteca */,
+				C867E39C20487E000018FEB7 /* Library */,
 				C867E39B20487DF20018FEB7 /* Login */,
 			);
 			path = Views;
@@ -318,16 +318,16 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		C867E39C20487E000018FEB7 /* Biblioteca */ = {
+		C867E39C20487E000018FEB7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
 				C81D3CAF204F171C00DC494C /* Cell_TableView */,
-				C8429B97204722CC008A84F8 /* BibliotecaView.swift */,
-				C8429B9B20472302008A84F8 /* BibliotecaViewController.swift */,
-				C8429B99204722EA008A84F8 /* BibliotecaView.xib */,
-				C875BFE3204D959D000E2076 /* BibliotecaViewModel.swift */,
+				C8429B97204722CC008A84F8 /* LibraryView.swift */,
+				C8429B9B20472302008A84F8 /* LibraryViewController.swift */,
+				C8429B99204722EA008A84F8 /* LibraryView.xib */,
+				C875BFE3204D959D000E2076 /* LibraryViewModel.swift */,
 			);
-			path = Biblioteca;
+			path = Library;
 			sourceTree = "<group>";
 		};
 		C875BFE5204D99EF000E2076 /* Extensions */ = {
@@ -342,7 +342,7 @@
 		C8CF75D7204DD72F0025F3E7 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				C8005F532049E1340094AFE1 /* BibliotecaRepository.swift */,
+				C8005F532049E1340094AFE1 /* LibraryRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -480,7 +480,7 @@
 				9D15750F1CB1B27500EA395E /* LaunchScreen.storyboard in Resources */,
 				C8429B9D20472D77008A84F8 /* LoginView.xib in Resources */,
 				9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */,
-				C8429B9A204722EA008A84F8 /* BibliotecaView.xib in Resources */,
+				C8429B9A204722EA008A84F8 /* LibraryView.xib in Resources */,
 				C8798FE62040B7AE00EACA53 /* Default-568h@2x.png in Resources */,
 				C81D3CB1204F176400DC494C /* BookCellView.xib in Resources */,
 			);
@@ -552,11 +552,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C875BFE4204D959D000E2076 /* BibliotecaViewModel.swift in Sources */,
+				C875BFE4204D959D000E2076 /* LibraryViewModel.swift in Sources */,
 				C81D3CB3204F177300DC494C /* BookCellView.swift in Sources */,
 				C8005F522049DCCC0094AFE1 /* NetworkingConfigurationLauncher.swift in Sources */,
-				C8005F542049E1340094AFE1 /* BibliotecaRepository.swift in Sources */,
-				C8429B9C20472302008A84F8 /* BibliotecaViewController.swift in Sources */,
+				C8005F542049E1340094AFE1 /* LibraryRepository.swift in Sources */,
+				C8429B9C20472302008A84F8 /* LibraryViewController.swift in Sources */,
 				C80B30912045D9BD00479DEC /* LoginViewController.swift in Sources */,
 				CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */,
 				C8FFA9352045A8DA0061C1DE /* LoginView.swift in Sources */,
@@ -567,7 +567,7 @@
 				C8005F572049E4AA0094AFE1 /* Book.swift in Sources */,
 				C833099F205056B900D6FB30 /* User.swift in Sources */,
 				C8CF75C4204DA2160025F3E7 /* RepositoryManager.swift in Sources */,
-				C8429B98204722CC008A84F8 /* BibliotecaView.swift in Sources */,
+				C8429B98204722CC008A84F8 /* LibraryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

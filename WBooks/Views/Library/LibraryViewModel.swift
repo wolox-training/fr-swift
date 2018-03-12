@@ -1,5 +1,5 @@
 //
-//  BibliotecaViewModel.swift
+//  LibraryViewModel.swift
 //  WBooks
 //
 //  Created by Florencia Rosental on 05/03/2018.
@@ -10,20 +10,18 @@ import Foundation
 import ReactiveSwift
 import enum Result.NoError
 
-class BibliotecaViewModel {
-    fileprivate let _biblioRepo: BibliotecaRepositoryType
+class LibraryViewModel {
+    fileprivate let _biblioRepo: LibraryRepositoryType
     let books = MutableProperty<[Book]>([])
     
-    init(biblioRepo: BibliotecaRepositoryType = RepositoryManager.shared.createBibliotecaRepository()) {
+    init(biblioRepo: LibraryRepositoryType = RepositoryManager.shared.createLibraryRepository()) {
         _biblioRepo = biblioRepo
         
         fetchBooks()
     }
     
     func fetchBooks() {
-        let a = _biblioRepo.fetchBooks()
-        
-        a.startWithResult { [unowned self] result in
+        _biblioRepo.fetchBooks().startWithResult { [unowned self] result in
             switch result {
             case .success(let value):
                 self.books.value = value
@@ -31,9 +29,5 @@ class BibliotecaViewModel {
                 print(error)
             }
         }
-        
-        //Another way of doing this
-        // books <~ _biblioRepo.fetchBooks().liftError()
     }
-
 }

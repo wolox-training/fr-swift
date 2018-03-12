@@ -18,12 +18,15 @@ class BookCellView: UITableViewCell, NibLoadable {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.layer.masksToBounds = true
-        self.layer.cornerRadius = 25
+        setCornerRadius()
     }
 }
 
 // MARK: - Private Methods
 fileprivate extension BookCellView {
     
+    func setCornerRadius(){
+        self.layer.masksToBounds = true
+        self.layer.cornerRadius = 25
+    }
 }

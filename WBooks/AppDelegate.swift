@@ -8,9 +8,6 @@
 
 import UIKit
 import GoogleSignIn
-import Networking
-import AlamofireNetworkActivityIndicator
-import AlamofireNetworkActivityLogger
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

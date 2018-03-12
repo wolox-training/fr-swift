@@ -9,12 +9,10 @@
 import UIKit
 import Core
 import GoogleSignIn
-import Networking
 
 final class LoginViewController: UIViewController, GIDSignInUIDelegate {
 
     fileprivate lazy var _myView: LoginView = LoginView.loadFromNib()!
-    fileprivate let _sessionManager = SessionManager()
     
     override func loadView() {
         view = _myView
@@ -43,7 +41,6 @@ final class LoginViewController: UIViewController, GIDSignInUIDelegate {
     func logInClick(sender: UIButton) {
         _myView.statusText.text = "Logging..."
         GIDSignIn.sharedInstance().signIn()
-        
     }
     
     @objc
@@ -70,7 +67,7 @@ extension LoginViewController: GIDSignInDelegate {
         if let error = error {
             print("Couldn't log")
         } else {
-            let bibliotecaController = BibliotecaViewController()
+            let bibliotecaController = LibraryViewController()
             let navController = UINavigationController(rootViewController: bibliotecaController)
             present(navController, animated: true, completion: .none)
         }
