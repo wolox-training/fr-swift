@@ -57,12 +57,9 @@ final class LoginViewController: UIViewController, GIDSignInUIDelegate {
         _myView.statusText.text = loggedIn ? "Already logged in" : "Google Sign in\niOS Demo"
     }
     
-    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return UIStatusBarStyle.lightContent
     }
-    
-  
 }
 
 extension LoginViewController: GIDSignInDelegate {
@@ -70,7 +67,7 @@ extension LoginViewController: GIDSignInDelegate {
         if let error = error {
             print("Couldn't log")
         } else {
-            let bibliotecaController = BibliotecaViewController()
+            let bibliotecaController = LibraryViewController()
             let navController = UINavigationController(rootViewController: bibliotecaController)
             present(navController, animated: true, completion: .none)
         }

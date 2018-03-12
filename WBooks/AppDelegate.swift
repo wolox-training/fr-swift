@@ -14,16 +14,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
+    private let networkingConfigLauncher = NetworkingConfigurationLauncher()
+    
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow()
         
         // Initialize sign-in
         GIDSignIn.sharedInstance().clientID = "770844318431-lbb1uq0ppnhpe4mvfd0ve03iqknp4sj5.apps.googleusercontent.com"
-
+        
+        networkingConfigLauncher.launch()
+        
         //Sets the first view.
         let myViewController = LoginViewController()
         window?.rootViewController = myViewController
+
         return true
     }
     

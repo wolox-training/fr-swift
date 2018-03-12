@@ -15,4 +15,3 @@ class LoginView: UIView, NibLoadable {
     @IBOutlet weak var logOutButton: UIButton!
     @IBOutlet weak var statusText: UILabel!
 }
-
