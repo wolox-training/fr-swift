@@ -92,36 +92,6 @@ extension LibraryViewController: UITableViewDelegate, UITableViewDataSource {
 
 // MARK: - Private Methods
 fileprivate extension LibraryViewController {
-//    func getFrontCoverImage(imageURL: String?) -> UIImage {
-//        let photo = imageURL ?? "http://www.freeiconspng.com/uploads/no-image-icon-1.jpg"
-//        var catPictureURL = URL(string: photo)!
-//        var imageResult: UIImage = UIImage()
-//
-//        // Creating a session object with the default configuration.
-//        let session = URLSession(configuration: .default)
-//
-//        // Define a download task. The download task will download the contents of the URL as a Data object.
-//        let downloadPicTask = session.dataTask(with: catPictureURL) { (data, response, error) in
-//            // The download has finished.
-//            if let e = error {
-//                print("Error downloading picture: \(e)")
-//            } else {
-//                // No errors found.
-//                if let res = response as? HTTPURLResponse {
-//                    if let imageData = data {
-//                        // Converts that Data into an image.
-//                        imageResult = UIImage(data: imageData)!
-//                    }
-//                } else {
-//                    print("Couldn't get response code for some reason")
-//                }
-//            }
-//        }
-//        downloadPicTask.resume()
-//
-//        return imageResult
-//    }
-    
     func setUpTable() {
         _myView.booksTable.register(UINib(nibName: "BookCellView", bundle: nil), forCellReuseIdentifier: "BookCellView")
         _myView.booksTable.backgroundColor = .getLightBlue()
