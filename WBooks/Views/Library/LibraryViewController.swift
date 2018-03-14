@@ -48,7 +48,8 @@ extension LibraryViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You selected cell #\(indexPath.row)!")
+        let bookDetailsView = BookDetailsViewController()
+        present(bookDetailsView, animated: true, completion: .none)
     }
 }
 

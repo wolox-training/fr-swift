@@ -9,3 +9,6 @@
 "tabBar.suggestTitle" = "Suggest";
 "tabBar.rentalsTitle" = "Rentals";
 
+//Book Details
+"bookDetails.title" = "Book detail";
+

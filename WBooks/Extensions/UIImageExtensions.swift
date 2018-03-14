@@ -17,5 +17,9 @@ internal extension UIImage {
     static var notifications: UIImage {
         return UIImage(named: "ic_notifications")!
     }
+    
+    static var back: UIImage {
+        return UIImage(named: "ic_back")!
+    }
 
 }
