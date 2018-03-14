@@ -1,0 +1,11 @@
+// Library
+
+"library.title" = "Library";
+
+
+//TabBar
+"tabBar.libraryTitle" = "Library";
+"tabBar.wishlistTitle" = "Wishlist";
+"tabBar.suggestTitle" = "Suggest";
+"tabBar.rentalsTitle" = "Rentals";
+

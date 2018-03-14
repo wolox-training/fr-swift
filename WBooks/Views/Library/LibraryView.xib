@@ -18,9 +18,12 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bc_nav bar" translatesAutoresizingMaskIntoConstraints="NO" id="WgU-gG-maz">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="102" id="CUI-ph-R58"/>
+                    </constraints>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="koF-2L-pVN">
-                    <rect key="frame" x="20" y="102" width="335" height="565"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="koF-2L-pVN">
+                    <rect key="frame" x="0.0" y="102" width="375" height="565"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
@@ -29,8 +32,8 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="koF-2L-pVN" secondAttribute="bottom" id="6ex-XR-U2h"/>
                 <constraint firstItem="WgU-gG-maz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="CCz-aD-0jo"/>
                 <constraint firstItem="WgU-gG-maz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NiA-4j-Ftw"/>
-                <constraint firstItem="koF-2L-pVN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="bhG-mU-dSm"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="koF-2L-pVN" secondAttribute="trailing" constant="20" id="cxr-d5-CL7"/>
+                <constraint firstItem="koF-2L-pVN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bhG-mU-dSm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="koF-2L-pVN" secondAttribute="trailing" id="cxr-d5-CL7"/>
                 <constraint firstItem="WgU-gG-maz" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="gin-xW-jvU"/>
                 <constraint firstItem="koF-2L-pVN" firstAttribute="top" secondItem="WgU-gG-maz" secondAttribute="bottom" id="qcv-nA-i6j"/>
             </constraints>
@@ -38,7 +41,7 @@
             <connections>
                 <outlet property="booksTable" destination="koF-2L-pVN" id="sUP-dW-g7X"/>
             </connections>
-            <point key="canvasLocation" x="24.5" y="52.5"/>
+            <point key="canvasLocation" x="874" y="104"/>
         </view>
     </objects>
     <resources>

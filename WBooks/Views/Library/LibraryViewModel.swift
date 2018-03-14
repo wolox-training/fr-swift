@@ -10,21 +10,21 @@ import Foundation
 import ReactiveSwift
 import enum Result.NoError
 
-class LibraryViewModel {
-    fileprivate let _biblioRepo: LibraryRepositoryType
-    let books = MutableProperty<[Book]>([])
+internal final class LibraryViewModel {
     
-    init(biblioRepo: LibraryRepositoryType = RepositoryManager.shared.createLibraryRepository()) {
-        _biblioRepo = biblioRepo
-        
+    private let _libraryRepository: LibraryRepositoryType
+    let books = MutableProperty<[BookViewModel]>([])
+    
+    init(libraryRepository: LibraryRepositoryType = RepositoryManager.shared.createLibraryRepository()) {
+        _libraryRepository = libraryRepository
         fetchBooks()
     }
     
     func fetchBooks() {
-        _biblioRepo.fetchBooks().startWithResult { [unowned self] result in
+        _libraryRepository.fetchBooks().startWithResult { [unowned self] result in
             switch result {
             case .success(let value):
-                self.books.value = value
+                self.books.value = value.map { BookViewModel(book: $0) }
             case .failure(let error):
                 print(error)
             }
