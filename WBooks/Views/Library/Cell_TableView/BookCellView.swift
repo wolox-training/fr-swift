@@ -9,24 +9,22 @@
 import Foundation
 import Core
 
-class BookCellView: UITableViewCell, NibLoadable {
+final internal class BookCellView: UITableViewCell, NibLoadable {
     
-    @IBOutlet weak var frontCover: UIImageView!
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var author: UILabel!
+    static let Height: CGFloat = 113.0
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
-        setCornerRadius()
-    }
+    @IBOutlet weak var frontCoverImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
 }
 
-// MARK: - Private Methods
-fileprivate extension BookCellView {
+internal extension BookCellView {
     
-    func setCornerRadius(){
-        self.layer.masksToBounds = true
-        self.layer.cornerRadius = 25
+    func bind(viewModel: BookViewModel) {
+        titleLabel.text = viewModel.title
+        authorLabel.text = viewModel.author
+        viewModel.downloadImage(closure: {
+            self.frontCoverImageView.image = $0
+        })
     }
 }

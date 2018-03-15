@@ -67,9 +67,8 @@ extension LoginViewController: GIDSignInDelegate {
         if let error = error {
             print("Couldn't log")
         } else {
-            let bibliotecaController = LibraryViewController()
-            let navController = UINavigationController(rootViewController: bibliotecaController)
-            present(navController, animated: true, completion: .none)
+            let tabBarController = TabBarController()
+            present(tabBarController, animated: true, completion: .none)
         }
     }
 }

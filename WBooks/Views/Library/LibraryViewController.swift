@@ -15,12 +15,11 @@ import AlamofireNetworkActivityLogger
 
 final class LibraryViewController: UIViewController {
     
-    fileprivate lazy var _myView: LibraryView = LibraryView.loadFromNib()!
-    fileprivate let _sessionManager = SessionManager()
+    fileprivate lazy var _view: LibraryView = LibraryView.loadFromNib()!
     fileprivate let _viewModel = LibraryViewModel()
     
     override func loadView() {
-        view = _myView
+        view = _view
     }
     
     override func viewDidLoad() {
@@ -29,14 +28,6 @@ final class LibraryViewController: UIViewController {
         setUpTable()
         setUpNavigationBar()
         setupBindings()
-        
-        createRepositories()
-    }
- 
-    func createRepositories() {
-        let repository = LibraryRepository(
-            networkingConfiguration: RepositoryManager.shared.networkingConfiguration,
-            sessionManager: _sessionManager)
     }
 }
 
@@ -48,41 +39,12 @@ extension LibraryViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = _myView.booksTable.dequeueReusableCell(withIdentifier: "BookCellView") as? BookCellView {
-            cell.title.text = _viewModel.books.value[indexPath.row].title
-            cell.author.text = _viewModel.books.value[indexPath.row].author
-            //cell.frontCover.image = getFrontCoverImage(imageURL: _viewModel.books.value[indexPath.row].imageURL)
-            
-            let photo = _viewModel.books.value[indexPath.row].imageURL ?? "http://www.freeiconspng.com/uploads/no-image-icon-1.jpg"
-            var catPictureURL = URL(string: photo)!
-
-            // Creating a session object with the default configuration.
-            let session = URLSession(configuration: .default)
-
-            // Define a download task. The download task will download the contents of the URL as a Data object.
-            let downloadPicTask = session.dataTask(with: catPictureURL) { (data, response, error) in
-                // The download has finished.
-                if let e = error {
-                    print("Error downloading picture: \(e)")
-                } else {
-                    // No errors found.
-                    if let res = response as? HTTPURLResponse {
-                        if let imageData = data {
-                            // Converts that Data into an image.
-                            cell.frontCover.image = UIImage(data: imageData)
-                        }
-                    } else {
-                        print("Couldn't get response code for some reason")
-                    }
-                }
-            }
-
-            downloadPicTask.resume()
-            
-            return cell
-        } else {
-            return UITableViewCell()
-        }
+        let cell = _view.booksTable.dequeue(cell: BookCellView.self, for: indexPath)!
+        
+        let viewModel = _viewModel.books.value[indexPath.row]
+        cell.bind(viewModel: viewModel)
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -93,21 +55,23 @@ extension LibraryViewController: UITableViewDelegate, UITableViewDataSource {
 // MARK: - Private Methods
 fileprivate extension LibraryViewController {
     func setUpTable() {
-        _myView.booksTable.register(UINib(nibName: "BookCellView", bundle: nil), forCellReuseIdentifier: "BookCellView")
-        _myView.booksTable.backgroundColor = .getLightBlue()
+        _view.booksTable.register(cell: BookCellView.self)
+        _view.booksTable.backgroundColor = .getLightBlue()
         
-        _myView.booksTable.delegate = self
-        _myView.booksTable.dataSource = self
+        _view.booksTable.delegate = self
+        _view.booksTable.dataSource = self
+        
+        _view.booksTable.rowHeight = BookCellView.Height
     }
     
     func setUpNavigationBar() {
-        let rightButton = UIBarButtonItem(image: UIImage(named: "ic_search")!, style: .done, target: self, action: #selector(rightButtonHandler(sender:)))
+        let rightButton = UIBarButtonItem(image: .search, style: .done, target: self, action: #selector(rightButtonHandler(sender:)))
         rightButton.tintColor = .white
-        let leftButton = UIBarButtonItem(image: UIImage(named: "ic_notifications")!, style: .done, target: self, action: #selector(leftButtonHandler(sender:)))
+        let leftButton = UIBarButtonItem(image: .notifications, style: .done, target: self, action: #selector(leftButtonHandler(sender:)))
         leftButton.tintColor = .white
         navigationItem.rightBarButtonItem = rightButton
         navigationItem.leftBarButtonItem = leftButton
-        title = "Library"
+        title = "library.title".localized()
         
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
@@ -119,7 +83,7 @@ fileprivate extension LibraryViewController {
     
     func setupBindings() {
         _viewModel.books.signal.observeValues { [unowned self] _ in
-            self._myView.booksTable.reloadData()
+            self._view.booksTable.reloadData()
         }
     }
     
