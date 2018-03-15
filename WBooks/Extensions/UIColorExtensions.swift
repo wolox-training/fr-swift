@@ -15,4 +15,11 @@ extension UIColor {
         return UIColor(hex: "#C6F5FF")!
     }
     
+    static func getAddToWishlistButtonLightBlueColor() -> UIColor {
+        return UIColor(red:0/255, green:173/255, blue:238/255, alpha: 1)
+    }
+    
+    static func getRentButtonGreyColor() -> UIColor {
+        return UIColor(red:0.79, green:0.79, blue:0.79, alpha:1)
+    }
 }

@@ -27,22 +27,8 @@ final class BookDetailsViewController: UIViewController {
 // MARK: - Private Methods
 fileprivate extension BookDetailsViewController {
     func setUpNavigationBar() {
-        let leftButton = UIBarButtonItem(image: .back, style: .done, target: self, action: #selector(leftButtonHandler(sender:)))
-        leftButton.tintColor = .white
-        navigationItem.leftBarButtonItem = leftButton
         title = "bookDetails.title".localized()
-        
-        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
-//
-//        //Sets the navigation bar invisible
-//        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-//        navigationController?.navigationBar.shadowImage = UIImage()
-//        navigationController?.navigationBar.isTranslucent = true
-    }
-    
-    @objc
-    func leftButtonHandler(sender: UIBarButtonItem) {
-        //TODO
+        navigationController?.navigationBar.topItem?.title = ""
     }
 }
 

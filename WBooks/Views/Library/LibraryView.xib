@@ -38,6 +38,9 @@
                 <constraint firstItem="koF-2L-pVN" firstAttribute="top" secondItem="WgU-gG-maz" secondAttribute="bottom" id="qcv-nA-i6j"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="booksTable" destination="koF-2L-pVN" id="sUP-dW-g7X"/>
             </connections>

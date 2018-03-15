@@ -41,15 +41,16 @@ extension LibraryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = _view.booksTable.dequeue(cell: BookCellView.self, for: indexPath)!
         
-        let viewModel = _viewModel.books.value[indexPath.row] //esto va a ser un book viewmodel
-        cell.bind(viewModel: viewModel)
+        let bookViewModel = _viewModel.books.value[indexPath.row]
+        cell.bind(viewModel: bookViewModel)
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let bookViewModel = _viewModel.books.value[indexPath.row]
         let bookDetailsView = BookDetailsViewController()
-        present(bookDetailsView, animated: true, completion: .none)
+        navigationController!.pushViewController(bookDetailsView, animated: true)
     }
 }
 
@@ -67,9 +68,7 @@ fileprivate extension LibraryViewController {
     
     func setUpNavigationBar() {
         let rightButton = UIBarButtonItem(image: .search, style: .done, target: self, action: #selector(rightButtonHandler(sender:)))
-        rightButton.tintColor = .white
         let leftButton = UIBarButtonItem(image: .notifications, style: .done, target: self, action: #selector(leftButtonHandler(sender:)))
-        leftButton.tintColor = .white
         navigationItem.rightBarButtonItem = rightButton
         navigationItem.leftBarButtonItem = leftButton
         title = "library.title".localized()
@@ -80,6 +79,8 @@ fileprivate extension LibraryViewController {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
+        navigationController?.navigationBar.tintColor = .white
+
     }
     
     func setupBindings() {
