@@ -17,13 +17,19 @@ public struct Book {
     let title: String
     let author: String
     let imageURL: String?
+    let year: String
+    let publisher: String
+    let description: String?
     
-    init(id: Int, genre: String, title: String, author: String, imageURL: String?) {
+    init(id: Int, genre: String, title: String, author: String, imageURL: String?, year: String, publisher: String, description: String?) {
         self.id = id
         self.genre = genre
         self.title =  title
         self.author = author
         self.imageURL = imageURL
+        self.year = year
+        self.publisher = publisher
+        self.description = description
     }
 }
 
@@ -36,6 +42,9 @@ extension Book: Argo.Decodable {
             <*> json <| "title"
             <*> json <| "author"
             <*> json <|? "image_url"
+            <*> json <| "year"
+            <*> json <| "publisher"
+            <*> json <|? "description"
     }
     
 }

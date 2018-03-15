@@ -26,6 +26,22 @@ internal final class BookViewModel {
         return _book.author
     }
     
+    var genre: String {
+        return _book.genre
+    }
+    
+    var year: String {
+        return _book.year
+    }
+    
+    var publisher: String {
+        return _book.publisher
+    }
+    
+    var description: String {
+        return _book.description!
+    }
+    
     func downloadImage(closure: @escaping (UIImage) -> Void) {
         let imageString = _book.imageURL ?? "http://www.freeiconspng.com/uploads/no-image-icon-1.jpg"
         let imageURL = URL(string: imageString)!
