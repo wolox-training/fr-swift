@@ -55,6 +55,7 @@
 		C8CF75D3204DD3C90025F3E7 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CF75D1204DD3C90025F3E7 /* Runes.framework */; };
 		C8CF75D4204DD3C90025F3E7 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CF75D2204DD3C90025F3E7 /* Curry.framework */; };
 		C8CF75D6204DD4050025F3E7 /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8CF75D5204DD4040025F3E7 /* KeychainSwift.framework */; };
+		C8FE6AE4205AFC2D00F84284 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FE6AE3205AFC2D00F84284 /* UIButtonExtension.swift */; };
 		C8FFA9352045A8DA0061C1DE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FFA9342045A8DA0061C1DE /* LoginView.swift */; };
 		CEB934DD1D21992100DF75C2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB934DC1D21992100DF75C2 /* Environment.swift */; };
 		CED934881E8466A60017CF96 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED934861E8466A60017CF96 /* Core.framework */; };
@@ -151,6 +152,7 @@
 		C8CF75D1204DD3C90025F3E7 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
 		C8CF75D2204DD3C90025F3E7 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
 		C8CF75D5204DD4040025F3E7 /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = "<group>"; };
+		C8FE6AE3205AFC2D00F84284 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		C8FFA9322045A8B00061C1DE /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		C8FFA9342045A8DA0061C1DE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CEB934DC1D21992100DF75C2 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -374,6 +376,7 @@
 				C875BFE6204D99FD000E2076 /* StringExtension.swift */,
 				C81D3CB5204F311A00DC494C /* UIColorExtensions.swift */,
 				C8B592E620581D71005DDBFC /* UIImageExtensions.swift */,
+				C8FE6AE3205AFC2D00F84284 /* UIButtonExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -633,6 +636,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C875BFE4204D959D000E2076 /* LibraryViewModel.swift in Sources */,
+				C8FE6AE4205AFC2D00F84284 /* UIButtonExtension.swift in Sources */,
 				C81D3CB3204F177300DC494C /* BookCellView.swift in Sources */,
 				C8005F522049DCCC0094AFE1 /* NetworkingConfigurationLauncher.swift in Sources */,
 				C8005F542049E1340094AFE1 /* LibraryRepository.swift in Sources */,

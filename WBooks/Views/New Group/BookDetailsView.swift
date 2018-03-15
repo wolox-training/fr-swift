@@ -24,6 +24,8 @@ class BookDetailsView: UIView, NibLoadable {
     
     override func awakeFromNib() {
         addToWishlistButton.layer.borderColor = UIColor.getAddToWishlistButtonLightBlueColor().cgColor
-        rentButton.backgroundColor = .getRentButtonGreyColor()
+        rentButton.applyGradient(colors: [
+            UIColor(red:0, green:0.68, blue:0.93, alpha:1).cgColor, UIColor(red:0.22, green:0.8, blue:0.8, alpha:1).cgColor])
     }
+    
 }
