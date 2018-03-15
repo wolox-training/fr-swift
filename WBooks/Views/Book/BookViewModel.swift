@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import ReactiveSwift
 
 internal final class BookViewModel {
     

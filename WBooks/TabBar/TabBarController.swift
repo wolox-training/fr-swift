@@ -22,6 +22,7 @@ final internal class TabBarController: UITabBarController {
         super.viewDidLoad()
         configure()
     }
+    
 }
 
 private extension TabBarController {
@@ -45,4 +46,5 @@ private extension TabBarController {
         
         viewControllers = [libraryTab, wishlistTab, suggestTab, rentalsTab]
     }
+    
 }

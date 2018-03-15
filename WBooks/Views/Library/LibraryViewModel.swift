@@ -12,22 +12,18 @@ import enum Result.NoError
 
 internal final class LibraryViewModel {
     
+    let books: Property<[BookViewModel]>
+    
     private let _libraryRepository: LibraryRepositoryType
-    let books = MutableProperty<[BookViewModel]>([])
     
     init(libraryRepository: LibraryRepositoryType = RepositoryManager.shared.createLibraryRepository()) {
         _libraryRepository = libraryRepository
-        fetchBooks()
+        
+        let fetchBookProducer: SignalProducer<[BookViewModel], NoError> = _libraryRepository.fetchBooks()
+            .map { $0.map { BookViewModel(book: $0) } }
+            .liftError()
+        
+        books = Property<[BookViewModel]>(initial: [], then: fetchBookProducer)
     }
     
-    func fetchBooks() {
-        _libraryRepository.fetchBooks().startWithResult { [unowned self] result in
-            switch result {
-            case .success(let value):
-                self.books.value = value.map { BookViewModel(book: $0) }
-            case .failure(let error):
-                print(error)
-            }
-        }
-    }
 }
