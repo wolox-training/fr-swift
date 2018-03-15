@@ -41,7 +41,7 @@ extension LibraryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = _view.booksTable.dequeue(cell: BookCellView.self, for: indexPath)!
         
-        let viewModel = _viewModel.books.value[indexPath.row] //esto va a ser un book viewmodel
+        let viewModel = _viewModel.books.value[indexPath.row]
         cell.bind(viewModel: viewModel)
         
         return cell
