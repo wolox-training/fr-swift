@@ -15,7 +15,7 @@ class RepositoryManager {
     
     static let shared = RepositoryManager()
     
-    fileprivate static let sessionToken: String = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNDksInZlcmlmaWNhdGlvbl9jb2RlIjoiZkNmQWJ1bmpfS0xmVkp6cjhIeWQ3dHc1VlJSa1ZNQi1iNFhZWnlHd0pYc3NMenpUVm1uY3RHLTVGcFBxRHhocyIsInJlbmV3X2lkIjoiUmt5UzRpei1QaGl4ZnNfMlE0VWFIdXY2UTVqNDZ6RHlBdk1OS1BMTjF6M3g4c3RObnNTcjl3d3pYRm5qWTdKcCIsIm1heGltdW1fdXNlZnVsX2RhdGUiOjE1MjM2MzQzOTksImV4cGlyYXRpb25fZGF0ZSI6MTUyMTIxNTE5OSwid2FybmluZ19leHBpcmF0aW9uX2RhdGUiOjE1MjEwNjAzOTl9.mMknliLcakk_UOupTojGf87NOGEW6ApqPG84OLZYCxE"
+    fileprivate static let sessionToken: String = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxNDksInZlcmlmaWNhdGlvbl9jb2RlIjoiZkNmQWJ1bmpfS0xmVkp6cjhIeWQ3dHc1VlJSa1ZNQi1iNFhZWnlHd0pYc3NMenpUVm1uY3RHLTVGcFBxRHhocyIsInJlbmV3X2lkIjoibkg3MW1NMzlONzJpOFRrMXNzakp4M25pVU1LaHFfams3Z19WNFRpZ3k5VUFGYVZYQy12U2s0U3dxMkpBVU5qeCIsIm1heGltdW1fdXNlZnVsX2RhdGUiOjE1MjM4MTAzMDMsImV4cGlyYXRpb25fZGF0ZSI6MTUyMTM5MTEwMywid2FybmluZ19leHBpcmF0aW9uX2RhdGUiOjE1MjEyMzYzMDN9.dB6uF8era7inAlQ9ftNj704w534MmeMXd4uarpnCCNY"
     
     fileprivate let _sessionManager = SessionManager()
     
@@ -33,12 +33,18 @@ class RepositoryManager {
     
     func logInUser() {
         let token = RepositoryManager.sessionToken
-        let userLogged = User(sessionToken: token, id: 1)
+        let userLogged = AuthUser(sessionToken: token, id: 1)
         _sessionManager.login(user: userLogged)
     }
     
     func createLibraryRepository() -> LibraryRepository {
         return LibraryRepository(
+            networkingConfiguration: networkingConfiguration,
+            sessionManager: _sessionManager)
+    }
+    
+    func createBookCommentsRepository() -> BookCommentsRepository {
+        return BookCommentsRepository(
             networkingConfiguration: networkingConfiguration,
             sessionManager: _sessionManager)
     }

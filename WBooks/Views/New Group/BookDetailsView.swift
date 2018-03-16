@@ -22,6 +22,8 @@ class BookDetailsView: UIView, NibLoadable {
     
     @IBOutlet weak var frontCoverImage: UIImageView!
     
+    @IBOutlet weak var bookCommentsTable: UITableView!
+    
     override func awakeFromNib() {
         addToWishlistButton.layer.borderColor = UIColor.getAddToWishlistButtonLightBlueColor().cgColor
         rentButton.applyGradient(colors: [

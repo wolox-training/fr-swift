@@ -140,22 +140,37 @@
                         </view>
                     </subviews>
                 </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h2c-Tg-aVa">
+                    <rect key="frame" x="20" y="402" width="335" height="265"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="0.77647058823529413" green="0.96078431372549022" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="H7f-tC-72e" firstAttribute="top" secondItem="2kq-Be-T1R" secondAttribute="bottom" constant="21" id="7o5-9M-313"/>
+                <constraint firstItem="h2c-Tg-aVa" firstAttribute="top" secondItem="H7f-tC-72e" secondAttribute="bottom" constant="10" id="BRp-C0-H5W"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="h2c-Tg-aVa" secondAttribute="trailing" constant="20" id="GYV-7D-por"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="H7f-tC-72e" secondAttribute="trailing" constant="20" id="IiP-i8-bMg"/>
                 <constraint firstItem="2kq-Be-T1R" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="O09-Nx-dkB"/>
                 <constraint firstItem="2kq-Be-T1R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VXc-jY-cQL"/>
+                <constraint firstItem="h2c-Tg-aVa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="f2b-GF-Xhm"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="H7f-tC-72e" secondAttribute="bottom" constant="275" id="jP0-K8-qqL"/>
                 <constraint firstItem="H7f-tC-72e" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="nrH-JY-NOW"/>
                 <constraint firstItem="2kq-Be-T1R" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ogD-nV-3qn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="h2c-Tg-aVa" secondAttribute="bottom" id="tSA-QQ-kNi"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="addToWishlistButton" destination="OrM-6u-3vB" id="Hk6-H4-bMW"/>
                 <outlet property="authorLabel" destination="YFk-8I-x4X" id="asM-Y8-Vc1"/>
                 <outlet property="availableLabel" destination="B5R-Zw-jgy" id="33E-x7-fju"/>
+                <outlet property="bookCommentsTable" destination="h2c-Tg-aVa" id="SOV-8t-zPE"/>
                 <outlet property="frontCoverImage" destination="LhI-Uo-QR7" id="qQi-Rh-joI"/>
                 <outlet property="genreLabel" destination="2dd-aG-XLf" id="SAB-WH-LZy"/>
                 <outlet property="rentButton" destination="tpt-XL-KsX" id="4vz-N8-dr0"/>

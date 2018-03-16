@@ -17,6 +17,10 @@ internal final class BookViewModel {
         _book = book
     }
     
+    var id: Int {
+        return _book.id
+    }
+    
     var title: String {
         return _book.title
     }

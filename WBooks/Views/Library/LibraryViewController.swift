@@ -27,7 +27,7 @@ final class LibraryViewController: UIViewController {
         
         setUpTable()
         setUpNavigationBar()
-        setupBindings()
+        setUpBindings()
     }
 }
 
@@ -84,7 +84,7 @@ fileprivate extension LibraryViewController {
 
     }
     
-    func setupBindings() {
+    func setUpBindings() {
         _viewModel.books.signal.observeValues { [unowned self] _ in
             self._view.booksTable.reloadData()
         }

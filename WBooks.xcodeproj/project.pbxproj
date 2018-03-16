@@ -28,11 +28,18 @@
 		C81D3CB3204F177300DC494C /* BookCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81D3CB2204F177300DC494C /* BookCellView.swift */; };
 		C81D3CB6204F311A00DC494C /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81D3CB5204F311A00DC494C /* UIColorExtensions.swift */; };
 		C824FAFC20445B3900CDBF31 /* WBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C824FAFB20445B3900CDBF31 /* WBooksUITests.swift */; };
-		C833099F205056B900D6FB30 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C833099E205056B900D6FB30 /* User.swift */; };
 		C8429B98204722CC008A84F8 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8429B97204722CC008A84F8 /* LibraryView.swift */; };
 		C8429B9A204722EA008A84F8 /* LibraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8429B99204722EA008A84F8 /* LibraryView.xib */; };
 		C8429B9C20472302008A84F8 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8429B9B20472302008A84F8 /* LibraryViewController.swift */; };
 		C8429B9D20472D77008A84F8 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8FFA9322045A8B00061C1DE /* LoginView.xib */; };
+		C85202A9205C215F0039397D /* BookCommentCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C85202A8205C215F0039397D /* BookCommentCellView.xib */; };
+		C85202AB205C217E0039397D /* BookCommentCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85202AA205C217E0039397D /* BookCommentCellView.swift */; };
+		C85202AD205C37BA0039397D /* BookComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85202AC205C37BA0039397D /* BookComment.swift */; };
+		C85202B1205C3DC40039397D /* BookCommentsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85202B0205C3DC40039397D /* BookCommentsRepository.swift */; };
+		C85202B5205C455E0039397D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85202B4205C455E0039397D /* User.swift */; };
+		C85202B7205C47C20039397D /* BookCommentsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85202B6205C47C20039397D /* BookCommentsListViewModel.swift */; };
+		C85202BA205C48860039397D /* BookCommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85202B9205C48860039397D /* BookCommentViewModel.swift */; };
+		C85202BC205C4B4D0039397D /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85202BB205C4B4D0039397D /* AuthUser.swift */; };
 		C85A89A3205976FB00496C2E /* BookDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A89A2205976FB00496C2E /* BookDetailsController.swift */; };
 		C85A89A52059771A00496C2E /* BookDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85A89A42059771A00496C2E /* BookDetailsView.swift */; };
 		C85A89A72059772B00496C2E /* BookDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C85A89A62059772B00496C2E /* BookDetailsView.xib */; };
@@ -124,10 +131,17 @@
 		C81D3CB2204F177300DC494C /* BookCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellView.swift; sourceTree = "<group>"; };
 		C81D3CB5204F311A00DC494C /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		C824FAFB20445B3900CDBF31 /* WBooksUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WBooksUITests.swift; sourceTree = "<group>"; };
-		C833099E205056B900D6FB30 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C8429B97204722CC008A84F8 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		C8429B99204722EA008A84F8 /* LibraryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryView.xib; sourceTree = "<group>"; };
 		C8429B9B20472302008A84F8 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		C85202A8205C215F0039397D /* BookCommentCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookCommentCellView.xib; sourceTree = "<group>"; };
+		C85202AA205C217E0039397D /* BookCommentCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCommentCellView.swift; sourceTree = "<group>"; };
+		C85202AC205C37BA0039397D /* BookComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookComment.swift; sourceTree = "<group>"; };
+		C85202B0205C3DC40039397D /* BookCommentsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCommentsRepository.swift; sourceTree = "<group>"; };
+		C85202B4205C455E0039397D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C85202B6205C47C20039397D /* BookCommentsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCommentsListViewModel.swift; sourceTree = "<group>"; };
+		C85202B9205C48860039397D /* BookCommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCommentViewModel.swift; sourceTree = "<group>"; };
+		C85202BB205C4B4D0039397D /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
 		C85A89A2205976FB00496C2E /* BookDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsController.swift; sourceTree = "<group>"; };
 		C85A89A42059771A00496C2E /* BookDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailsView.swift; sourceTree = "<group>"; };
 		C85A89A62059772B00496C2E /* BookDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookDetailsView.xib; sourceTree = "<group>"; };
@@ -242,6 +256,7 @@
 				C8CF75D7204DD72F0025F3E7 /* Repositories */,
 				C875BFE5204D99EF000E2076 /* Extensions */,
 				C8005F552049E49B0094AFE1 /* Model */,
+				C85202B8205C48660039397D /* ViewModel */,
 				C867E39A20487DD90018FEB7 /* Views */,
 				E1530D9A1ED378F9002A9002 /* Services */,
 				CEB934DE1D21A44700DF75C2 /* ConfigurationFiles */,
@@ -309,26 +324,48 @@
 			isa = PBXGroup;
 			children = (
 				C8005F562049E4AA0094AFE1 /* Book.swift */,
-				C833099E205056B900D6FB30 /* User.swift */,
+				C85202AC205C37BA0039397D /* BookComment.swift */,
+				C85202B4205C455E0039397D /* User.swift */,
+				C85202BB205C4B4D0039397D /* AuthUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		C81D3CAF204F171C00DC494C /* Cell_TableView */ = {
+		C81D3CAF204F171C00DC494C /* Cell_BooksTableView */ = {
 			isa = PBXGroup;
 			children = (
 				C81D3CB0204F176400DC494C /* BookCellView.xib */,
 				C81D3CB2204F177300DC494C /* BookCellView.swift */,
 			);
-			path = Cell_TableView;
+			path = Cell_BooksTableView;
+			sourceTree = "<group>";
+		};
+		C85202A7205C21130039397D /* Cell_BookCommentsTableView */ = {
+			isa = PBXGroup;
+			children = (
+				C85202A8205C215F0039397D /* BookCommentCellView.xib */,
+				C85202AA205C217E0039397D /* BookCommentCellView.swift */,
+			);
+			path = Cell_BookCommentsTableView;
+			sourceTree = "<group>";
+		};
+		C85202B8205C48660039397D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C8B592EC20581EDB005DDBFC /* BookViewModel.swift */,
+				C85202B9205C48860039397D /* BookCommentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		C85A89A1205976DA00496C2E /* BookDetails */ = {
 			isa = PBXGroup;
 			children = (
+				C85202A7205C21130039397D /* Cell_BookCommentsTableView */,
 				C85A89A2205976FB00496C2E /* BookDetailsController.swift */,
 				C85A89A42059771A00496C2E /* BookDetailsView.swift */,
 				C85A89A62059772B00496C2E /* BookDetailsView.xib */,
+				C85202B6205C47C20039397D /* BookCommentsListViewModel.swift */,
 			);
 			name = BookDetails;
 			path = "New Group";
@@ -337,7 +374,6 @@
 		C867E39A20487DD90018FEB7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C8B592EB20581ECC005DDBFC /* Book */,
 				C8B592F620582333005DDBFC /* Rentals */,
 				C8B592F1205822FE005DDBFC /* Suggest */,
 				C8B592F0205822F1005DDBFC /* Wishlist */,
@@ -361,7 +397,7 @@
 		C867E39C20487E000018FEB7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				C81D3CAF204F171C00DC494C /* Cell_TableView */,
+				C81D3CAF204F171C00DC494C /* Cell_BooksTableView */,
 				C8429B9B20472302008A84F8 /* LibraryViewController.swift */,
 				C8429B97204722CC008A84F8 /* LibraryView.swift */,
 				C8429B99204722EA008A84F8 /* LibraryView.xib */,
@@ -387,14 +423,6 @@
 				C8B592E42058138E005DDBFC /* TabBarController.swift */,
 			);
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		C8B592EB20581ECC005DDBFC /* Book */ = {
-			isa = PBXGroup;
-			children = (
-				C8B592EC20581EDB005DDBFC /* BookViewModel.swift */,
-			);
-			path = Book;
 			sourceTree = "<group>";
 		};
 		C8B592F0205822F1005DDBFC /* Wishlist */ = {
@@ -425,6 +453,7 @@
 			isa = PBXGroup;
 			children = (
 				C8005F532049E1340094AFE1 /* LibraryRepository.swift */,
+				C85202B0205C3DC40039397D /* BookCommentsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -562,6 +591,7 @@
 				9D15750F1CB1B27500EA395E /* LaunchScreen.storyboard in Resources */,
 				C8429B9D20472D77008A84F8 /* LoginView.xib in Resources */,
 				9D15750C1CB1B27500EA395E /* Assets.xcassets in Resources */,
+				C85202A9205C215F0039397D /* BookCommentCellView.xib in Resources */,
 				C8B592EA20581E36005DDBFC /* Localizable.strings in Resources */,
 				C8429B9A204722EA008A84F8 /* LibraryView.xib in Resources */,
 				C8798FE62040B7AE00EACA53 /* Default-568h@2x.png in Resources */,
@@ -636,11 +666,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C875BFE4204D959D000E2076 /* LibraryViewModel.swift in Sources */,
+				C85202BC205C4B4D0039397D /* AuthUser.swift in Sources */,
+				C85202AB205C217E0039397D /* BookCommentCellView.swift in Sources */,
 				C8FE6AE4205AFC2D00F84284 /* UIButtonExtension.swift in Sources */,
 				C81D3CB3204F177300DC494C /* BookCellView.swift in Sources */,
+				C85202B1205C3DC40039397D /* BookCommentsRepository.swift in Sources */,
 				C8005F522049DCCC0094AFE1 /* NetworkingConfigurationLauncher.swift in Sources */,
 				C8005F542049E1340094AFE1 /* LibraryRepository.swift in Sources */,
 				C85A89A52059771A00496C2E /* BookDetailsView.swift in Sources */,
+				C85202B5205C455E0039397D /* User.swift in Sources */,
 				C8B592F52058232A005DDBFC /* SuggestViewController.swift in Sources */,
 				C8429B9C20472302008A84F8 /* LibraryViewController.swift in Sources */,
 				C80B30912045D9BD00479DEC /* LoginViewController.swift in Sources */,
@@ -649,16 +683,18 @@
 				C8FFA9352045A8DA0061C1DE /* LoginView.swift in Sources */,
 				C8B592E720581D71005DDBFC /* UIImageExtensions.swift in Sources */,
 				E1530D9C1ED37905002A9002 /* RollbarService.swift in Sources */,
+				C85202B7205C47C20039397D /* BookCommentsListViewModel.swift in Sources */,
 				C81D3CB6204F311A00DC494C /* UIColorExtensions.swift in Sources */,
 				C875BFE7204D99FD000E2076 /* StringExtension.swift in Sources */,
 				9D1575051CB1B27500EA395E /* AppDelegate.swift in Sources */,
 				C8B592F820582341005DDBFC /* RentalsViewController.swift in Sources */,
 				C8B592ED20581EDB005DDBFC /* BookViewModel.swift in Sources */,
 				C8005F572049E4AA0094AFE1 /* Book.swift in Sources */,
-				C833099F205056B900D6FB30 /* User.swift in Sources */,
 				C85A89A3205976FB00496C2E /* BookDetailsController.swift in Sources */,
+				C85202BA205C48860039397D /* BookCommentViewModel.swift in Sources */,
 				C8B592EF205822E8005DDBFC /* WishlistViewController.swift in Sources */,
 				C8CF75C4204DA2160025F3E7 /* RepositoryManager.swift in Sources */,
+				C85202AD205C37BA0039397D /* BookComment.swift in Sources */,
 				C8429B98204722CC008A84F8 /* LibraryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
